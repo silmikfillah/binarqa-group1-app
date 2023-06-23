@@ -19,3 +19,9 @@ build
 /.settings/
 /.classpath
 .svn/
+.log
+.settings
+/settings/
+.cache
+console.properties
+/Reports/
