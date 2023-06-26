@@ -17,5 +17,5 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-Mobile.tap(findTestObject('Login/android.widget.Button - Masuk from Akun'), 0)
+Mobile.tap(findTestObject('Akun/android.view.ViewGroup - Logout'), 0)
 

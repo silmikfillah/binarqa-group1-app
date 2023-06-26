@@ -17,5 +17,5 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-Mobile.setText(findTestObject('Login/android.widget.EditText - Password'), password, 0)
+Mobile.tap(findTestObject('Search/android.view.ViewGroup - First Search Result'), 10)
 
