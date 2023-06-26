@@ -1,0 +1,16 @@
+Feature: Buyer Bid Valid
+  Buyer want to bid with Valid Price
+
+  @BidValid
+  Scenario: Buyer - Bid with Valid Price
+  
+    Given buyer sudah login
+    And buyer berada di halaman produk
+    
+    When buyer click search
+    And buyer input "Contoh"
+    And buyer click first product
+    And buyer click Saya tertarik dan ingin nego button
+    And user memasukan harga tawaran "2000"
+    And user click di tombol Kirim button
+    Then buyer menunggu respon penjual
