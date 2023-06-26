@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>User want to see &quot;Diminati&quot; List that shows list of bids made for product added, Requirement: Login</description>
+   <name>DJS03 - See Diminati List</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>bc0aa76e-33d7-473d-807e-c2d00d9ab47b</testCaseGuid>
+</TestCaseEntity>

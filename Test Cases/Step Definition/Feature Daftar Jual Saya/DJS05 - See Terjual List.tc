@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>User want to see &quot;Terjual&quot; List of product that shows product that already sold, Requirement: Login</description>
+   <name>DJS05 - See Terjual List</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>ae82e93b-3b04-4244-932d-f5c4fbd30f08</testCaseGuid>
+</TestCaseEntity>
