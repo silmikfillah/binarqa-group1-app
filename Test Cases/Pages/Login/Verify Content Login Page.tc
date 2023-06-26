@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>verify all elements visible</description>
+   <name>Verify Content Login Page</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>d317533d-5bdc-491b-b6bf-7936f69ae237</testCaseGuid>
+</TestCaseEntity>

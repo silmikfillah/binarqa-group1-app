@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Verify Invalid Empty Email</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>ab9a77fc-d941-4ab4-b082-39db99bfaa44</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>9efe5226-ad8f-4139-8afb-8fee2d29b226</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>9efe5226-ad8f-4139-8afb-8fee2d29b226</id>
+      <masked>false</masked>
+      <name>variable</name>
+   </variable>
+</TestCaseEntity>

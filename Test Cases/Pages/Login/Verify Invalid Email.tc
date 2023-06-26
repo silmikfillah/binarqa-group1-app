@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Verify Invalid Email</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>bfd2ae00-d157-4225-836b-9c5853151a43</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>489fefec-9fe0-4efb-9e19-c95b4f1ae174</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>489fefec-9fe0-4efb-9e19-c95b4f1ae174</id>
+      <masked>false</masked>
+      <name>expected</name>
+   </variable>
+</TestCaseEntity>
