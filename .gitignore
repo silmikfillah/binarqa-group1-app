@@ -20,7 +20,9 @@ build
 /settings/
 .cache
 *.gradle
+.log
 *.log
+appium.log
 console.properties
 /bin/
 /Reports/

@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>SRC01 - Search Product</name>
+   <name>Verify First Result</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>defc5f73-3e19-4927-89d9-ff7755bad7a5</testCaseGuid>
+   <testCaseGuid>4450cbc8-5a73-4e8d-8b4c-e84ae0c5d047</testCaseGuid>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>f066bdb1-3343-488b-86c8-24456418be6a</variableId>
+      <variableId>560a3709-b6d5-4024-a095-eb66883bfd3b</variableId>
    </variableLinks>
    <variable>
-      <defaultValue>'buku'</defaultValue>
+      <defaultValue>''</defaultValue>
       <description></description>
-      <id>f066bdb1-3343-488b-86c8-24456418be6a</id>
+      <id>560a3709-b6d5-4024-a095-eb66883bfd3b</id>
       <masked>false</masked>
-      <name>text</name>
+      <name>expectedText</name>
    </variable>
 </TestCaseEntity>

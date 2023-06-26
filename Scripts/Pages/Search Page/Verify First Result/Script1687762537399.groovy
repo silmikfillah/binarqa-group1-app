@@ -17,9 +17,8 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.callTestCase(findTestCase('Pages/Homepage/Click Search Field'), [:], FailureHandling.STOP_ON_FAILURE)
+Mobile.verifyElementVisible(findTestObject('Search/android.view.ViewGroup - First Search Result'), 0)
 
-WebUI.callTestCase(findTestCase('Pages/Search Page/Input Text Search Field'), [('searchText') : text], FailureHandling.STOP_ON_FAILURE)
-
-WebUI.callTestCase(findTestCase('Pages/Search Page/Verify First Result'), [('expectedText') : text], FailureHandling.STOP_ON_FAILURE)
+Mobile.verifyMatch(Mobile.getText(findTestObject('Search/android.widget.TextView - First Search Result - Product Name'), 
+        0), '.*'+expectedText+'.*', true)
 
