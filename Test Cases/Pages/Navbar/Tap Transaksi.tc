@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>Click Akun</name>
+   <name>Tap Transaksi</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>9aae97ae-f504-48a9-ac10-1ddbf24c563d</testCaseGuid>
+   <testCaseGuid>6e8f59c1-4b1b-4bed-beb7-55e603e6dab9</testCaseGuid>
 </TestCaseEntity>

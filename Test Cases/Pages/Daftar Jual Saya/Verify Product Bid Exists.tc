@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>Click Notifikasi</name>
+   <name>Verify Product Bid Exists</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>728953ef-c306-49e0-8489-dca1081ec19f</testCaseGuid>
+   <testCaseGuid>5c6960c0-945e-41d8-9d55-a6f6eca3d1dd</testCaseGuid>
 </TestCaseEntity>

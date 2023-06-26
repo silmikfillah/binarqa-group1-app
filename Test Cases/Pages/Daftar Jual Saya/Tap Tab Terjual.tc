@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>Click Search Field</name>
+   <name>Tap Tab Terjual</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>9b39abd4-1123-4781-9683-24b4820f745c</testCaseGuid>
+   <testCaseGuid>ab5b9184-d2a5-4543-84b5-7709fbcdd71e</testCaseGuid>
 </TestCaseEntity>

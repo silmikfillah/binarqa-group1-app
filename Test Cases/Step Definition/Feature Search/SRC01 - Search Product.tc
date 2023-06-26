@@ -16,6 +16,6 @@
       <description></description>
       <id>f066bdb1-3343-488b-86c8-24456418be6a</id>
       <masked>false</masked>
-      <name>text</name>
+      <name>searchText</name>
    </variable>
 </TestCaseEntity>

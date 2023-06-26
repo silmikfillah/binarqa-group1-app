@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>Click Transaksi</name>
+   <name>Verify No Product</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>6e8f59c1-4b1b-4bed-beb7-55e603e6dab9</testCaseGuid>
+   <testCaseGuid>66f72310-f7d2-4310-843d-d2005f1ba1ed</testCaseGuid>
 </TestCaseEntity>

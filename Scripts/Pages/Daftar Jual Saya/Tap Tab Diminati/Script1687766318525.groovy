@@ -17,17 +17,5 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-Mobile.callTestCase(findTestCase('Pages/Navbar/Tap Akun'), [:], FailureHandling.STOP_ON_FAILURE)
-
-Mobile.callTestCase(findTestCase('Pages/Akun/Tap Masuk from Akun Page'), [:], FailureHandling.STOP_ON_FAILURE)
-
-Mobile.callTestCase(findTestCase('Pages/Login/Verify Content Login Page'), [:], FailureHandling.STOP_ON_FAILURE)
-
-Mobile.callTestCase(findTestCase('Pages/Login/Input Email'), [('email') : 'groupsatu@gmail.com'], FailureHandling.STOP_ON_FAILURE)
-
-Mobile.callTestCase(findTestCase('Pages/Login/Input Password'), [('password') : 'abc!12345'], FailureHandling.STOP_ON_FAILURE)
-
-Mobile.callTestCase(findTestCase('Pages/Login/Tap Button Masuk'), [:], FailureHandling.STOP_ON_FAILURE)
-
-Mobile.callTestCase(findTestCase('Pages/Login/Verify Login Valid'), [:], FailureHandling.STOP_ON_FAILURE)
+Mobile.tap(findTestObject('Daftar Jual Saya/android.widget.LinearLayout - Tab Diminati'), 0)
 
