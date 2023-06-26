@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Input Kategori Produk</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>8ee3a34a-e8b7-4d02-a004-7bd50afcd81e</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>cb32c743-2da6-4905-9b1c-64370b2048f3</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'Kesehatan'</defaultValue>
+      <description></description>
+      <id>cb32c743-2da6-4905-9b1c-64370b2048f3</id>
+      <masked>false</masked>
+      <name>kategoriProduk</name>
+   </variable>
+</TestCaseEntity>
