@@ -12,7 +12,7 @@
       <variableId>f066bdb1-3343-488b-86c8-24456418be6a</variableId>
    </variableLinks>
    <variable>
-      <defaultValue>'buku'</defaultValue>
+      <defaultValue>'key'</defaultValue>
       <description></description>
       <id>f066bdb1-3343-488b-86c8-24456418be6a</id>
       <masked>false</masked>

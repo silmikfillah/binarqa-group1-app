@@ -20,5 +20,5 @@ import org.openqa.selenium.Keys as Keys
 Mobile.verifyElementVisible(findTestObject('Search/android.view.ViewGroup - First Search Result'), 0)
 
 Mobile.verifyMatch(Mobile.getText(findTestObject('Search/android.widget.TextView - First Search Result - Product Name'), 
-        0), '.*'+expectedText+'.*', true)
+        0), '(?i).*'+expectedText+'.*', true)
 
