@@ -14,8 +14,14 @@ build
 .classpath
 
 .project
+
+
+.settings
+/settings/
+.cache
+*.gradle
+*.log
+console.properties
 /bin/
+/Reports/
 /Libs/
-/.settings/
-/.classpath
-.svn/
