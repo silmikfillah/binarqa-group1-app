@@ -23,7 +23,7 @@ build
 .log
 *.log
 appium.log
-console.properties
+C:\Users\Alex\Desktop\App\New1\binarqa-group1-appconsole.properties\appium.log
 /bin/
 /Reports/
 /Libs/
