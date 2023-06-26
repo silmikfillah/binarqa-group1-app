@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>Click Masuk From Akun</name>
+   <name>BID02 - Bid Invalid</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>fb7a7ca6-dfe0-4bc5-a809-2e8f2f6cad87</testCaseGuid>
+   <testCaseGuid>b46f5fa4-b28b-4022-8052-627281ae58fa</testCaseGuid>
 </TestCaseEntity>

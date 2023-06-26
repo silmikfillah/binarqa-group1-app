@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>Click Masuk</name>
+   <name>Click Logout</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>4fd57bd7-0520-4f99-86f9-d3dd3112763a</testCaseGuid>
+   <testCaseGuid>8e481b53-4243-4c64-b93a-c6bbaa42d064</testCaseGuid>
 </TestCaseEntity>
