@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>UPD01 - Seller Update Status to Berhasil Terjual</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>1ec13cb1-ab4b-4a13-ad44-414f9c0f14ad</testCaseGuid>
+</TestCaseEntity>
