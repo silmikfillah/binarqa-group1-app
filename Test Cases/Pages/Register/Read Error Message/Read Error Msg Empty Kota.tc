@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Read Error Msg Empty Kota</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>b87726bd-a280-47ca-b3cf-3efee549a0b8</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>04102791-7b2e-4b35-9eff-b44053f80a62</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>04102791-7b2e-4b35-9eff-b44053f80a62</id>
+      <masked>false</masked>
+      <name>expected</name>
+   </variable>
+</TestCaseEntity>

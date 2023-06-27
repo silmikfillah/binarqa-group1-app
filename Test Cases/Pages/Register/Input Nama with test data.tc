@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Input Nama with test data</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>fbc62968-bf77-4915-bf04-72109a913a31</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>32b1398b-d4df-4035-a50e-a9b2d1bcf9b2</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>32b1398b-d4df-4035-a50e-a9b2d1bcf9b2</id>
+      <masked>false</masked>
+      <name>nama</name>
+   </variable>
+</TestCaseEntity>

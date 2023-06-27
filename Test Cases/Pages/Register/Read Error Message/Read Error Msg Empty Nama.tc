@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Read Error Msg Empty Nama</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>d3673c52-c5ca-4fbb-9e09-f57a0cb0eeef</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>eeac8450-afd8-4626-b17c-31cab5153048</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>eeac8450-afd8-4626-b17c-31cab5153048</id>
+      <masked>false</masked>
+      <name>variable</name>
+   </variable>
+</TestCaseEntity>

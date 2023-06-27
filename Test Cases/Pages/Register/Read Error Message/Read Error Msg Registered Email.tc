@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>&quot;Email sudah digunakan&quot;</description>
+   <name>Read Error Msg Registered Email</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>6eca9369-8a19-46ef-b384-f7150688a8e6</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>bc238dfd-f44d-426d-a0fa-2d8d2ba3c81a</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>bc238dfd-f44d-426d-a0fa-2d8d2ba3c81a</id>
+      <masked>false</masked>
+      <name>expected</name>
+   </variable>
+</TestCaseEntity>

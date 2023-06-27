@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Verify Register with if else</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>a9784d29-0d84-4933-90f3-ad8075818f5a</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>b31f4539-3277-487e-b8f0-8b65988a905b</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>b31f4539-3277-487e-b8f0-8b65988a905b</id>
+      <masked>false</masked>
+      <name>status</name>
+   </variable>
+</TestCaseEntity>

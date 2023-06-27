@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Read Error Msg Empty Alamat</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>534375f7-0a39-470c-99ff-512c0675b00d</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>8bdd3130-1264-4a21-876c-6c13e334e657</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>8bdd3130-1264-4a21-876c-6c13e334e657</id>
+      <masked>false</masked>
+      <name>expected</name>
+   </variable>
+</TestCaseEntity>

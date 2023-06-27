@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Input Nomor Hp</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>13980d01-86d8-4479-9e55-5335c184b1b5</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>71e9648d-b1a7-47a2-a8a7-b7e61d363fe7</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>71e9648d-b1a7-47a2-a8a7-b7e61d363fe7</id>
+      <masked>false</masked>
+      <name>nomor_hp</name>
+   </variable>
+</TestCaseEntity>

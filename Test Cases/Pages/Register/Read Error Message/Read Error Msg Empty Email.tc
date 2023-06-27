@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Read Error Msg Empty Email</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>e0b27a11-4572-4491-a1aa-ab9661150c0d</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>5199ffac-1179-4946-a271-ccbfe0382df6</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>5199ffac-1179-4946-a271-ccbfe0382df6</id>
+      <masked>false</masked>
+      <name>expected</name>
+   </variable>
+</TestCaseEntity>
