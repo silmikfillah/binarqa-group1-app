@@ -17,11 +17,7 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.callTestCase(findTestCase('Pages/Homepage/Tap Search Field'), [:], FailureHandling.STOP_ON_FAILURE)
+Mobile.verifyElementVisible(findTestObject('Search/android.widget.ImageView - Search Result Empty'), 0)
 
-WebUI.callTestCase(findTestCase('Pages/Search Page/Verify On Search Page'), [:], FailureHandling.STOP_ON_FAILURE)
-
-WebUI.callTestCase(findTestCase('Pages/Search Page/Input Text Search Field'), [('searchText') : searchText], FailureHandling.STOP_ON_FAILURE)
-
-WebUI.callTestCase(findTestCase('Pages/Search Page/Verify First Result'), [('expectedText') : searchText], FailureHandling.STOP_ON_FAILURE)
+Mobile.verifyElementVisible(findTestObject('Search/android.widget.TextView - Search Result Empty'), 0)
 
