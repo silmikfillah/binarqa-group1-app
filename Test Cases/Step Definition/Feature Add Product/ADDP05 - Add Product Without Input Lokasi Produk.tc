@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>ADDP05 - Add Product Without Input Lokasi Produk</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>8dcaf2b3-2a96-4e7c-97ad-e726d191e35d</testCaseGuid>
+</TestCaseEntity>

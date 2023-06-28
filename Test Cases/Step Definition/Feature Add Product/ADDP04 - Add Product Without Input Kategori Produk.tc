@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>ADDP04 - Add Product Without Input Kategori Produk</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>89b0cb34-223f-4d43-9d04-e0c4c913857a</testCaseGuid>
+</TestCaseEntity>

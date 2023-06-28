@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>ADDP03 - Add Product Without Input Harga Produk</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>9eca3b9d-316f-408b-9536-5fda8c7c3ef2</testCaseGuid>
+</TestCaseEntity>

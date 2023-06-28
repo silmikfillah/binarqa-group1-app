@@ -1,10 +1,10 @@
 {
-  "keywordFileContentHash": "EBAB35921082FD2107939B69C100F7B0",
+  "keywordFileContentHash": "51F0036752F2AEF82780C2637A7B3322",
   "keywordClasses": [
     {
       "name": "Hook",
       "keywordMethods": []
     }
   ],
-  "javadocParsed": false
+  "javadocParsed": true
 }

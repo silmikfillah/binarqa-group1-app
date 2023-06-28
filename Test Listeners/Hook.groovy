@@ -27,8 +27,8 @@ import com.kms.katalon.core.util.KeywordUtil
 class Hook {
 	
   def launchApp() {
-	Mobile.startExistingApplication('id.binar.fp.secondhand', FailureHandling.STOP_ON_FAILURE)
-	//Mobile.startApplication(System.getProperty("user.dir") + "\\Apk\\app-release-second-hand-gcp.apk", true)
+	//Mobile.startExistingApplication('id.binar.fp.secondhand', FailureHandling.STOP_ON_FAILURE)
+	Mobile.startApplication(System.getProperty("user.dir") + "\\Apk\\app-release-second-hand-gcp.apk", false)
   }
 	
   @BeforeTestCase
