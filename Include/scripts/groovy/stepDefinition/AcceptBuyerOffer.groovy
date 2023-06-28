@@ -43,56 +43,39 @@ import cucumber.api.java.en.Then
 import cucumber.api.java.en.When
 
 
+class AcceptBuyerOffer {
 
-class BidWithValidPrice {
-
-	@Given("buyer sudah login")
-	public void buyer_sudah_login() {
+	@Given("seller sudah melakukan login")
+	public void seller_sudah_melakukan_login() {
 		WebUI.callTestCase(findTestCase('Pages/Navbar/Tap Akun'), [:], FailureHandling.STOP_ON_FAILURE)
 		WebUI.callTestCase(findTestCase('Pages/Akun/Tap Masuk from Akun Page'), [:], FailureHandling.STOP_ON_FAILURE)
-		WebUI.callTestCase(findTestCase('Pages/Login/Input Email'), [('email') : 'alexbeli1@gmail.com'], FailureHandling.STOP_ON_FAILURE)
+		WebUI.callTestCase(findTestCase('Pages/Login/Input Email'), [('email') : 'alexjual1@gmail.com'], FailureHandling.STOP_ON_FAILURE)
 		WebUI.callTestCase(findTestCase('Pages/Login/Input Password'), [('password') : 'asdqwe'], FailureHandling.STOP_ON_FAILURE)
 		WebUI.callTestCase(findTestCase('Pages/Login/Tap Button Masuk'), [:], FailureHandling.STOP_ON_FAILURE)
 	}
 
-	@Given("buyer berada di halaman produk")
-	public void buyer_berada_di_halaman_produk() {
-		WebUI.callTestCase(findTestCase('Pages/Navbar/Tap Beranda'), [:], FailureHandling.STOP_ON_FAILURE)
+	@When("seller click Daftar Jual Saya")
+	public void seller_click_Daftar_Jual_Saya() {
+		WebUI.callTestCase(findTestCase('Pages/Akun/Tap Daftar Jual Saya'), [:], FailureHandling.STOP_ON_FAILURE)
 	}
 
-	@When("buyer click search")
-	public void buyer_click_search() {
-		WebUI.callTestCase(findTestCase('Pages/Homepage/Tap Search Field'), [:], FailureHandling.STOP_ON_FAILURE)
+	@When("seller click Diminati")
+	public void seller_click_Diminati() {
+		WebUI.callTestCase(findTestCase('Pages/Daftar Jual Saya/Tap Tab Diminati'), [:], FailureHandling.STOP_ON_FAILURE)
 	}
 
-	@When("buyer input {string}")
-	public void buyer_input(String search) {
-		WebUI.callTestCase(findTestCase('Pages/Search Page/Input Text Search Field'), [('searchText') : search], FailureHandling.STOP_ON_FAILURE)
+	@When("seller click first Diminati")
+	public void seller_click_first_Diminati() {
+		WebUI.callTestCase(findTestCase('Pages/Update Status Seller/Click First Diminati'), [:], FailureHandling.STOP_ON_FAILURE)
 	}
 
-	@When("buyer click first product")
-	public void buyer_click_first_product() {
-		WebUI.callTestCase(findTestCase('Pages/Buyer Bid/Click First Search'), [:], FailureHandling.STOP_ON_FAILURE)
+	@When("seller click Terima")
+	public void seller_Terima() {
+		WebUI.callTestCase(findTestCase('Pages/Update Status Seller/Click Terima'), [:], FailureHandling.STOP_ON_FAILURE)
 	}
 
-	@When("buyer click Saya tertarik dan ingin nego button")
-	public void buyer_click_Saya_tertarik_dan_ingin_nego_button() {
-		WebUI.callTestCase(findTestCase('Pages/Buyer Bid/Click Saya Tertarik dan Ingin Nego'), [:], FailureHandling.STOP_ON_FAILURE)
-	}
-
-	@When("buyer memasukan harga tawaran {string}")
-	public void buyer_memasukan_harga_tawaran(String harga) {
-		WebUI.callTestCase(findTestCase('Pages/Buyer Bid/Input Harga Tawar'), [('harga') : harga], FailureHandling.STOP_ON_FAILURE)
-	}
-
-	@When("buyer click di tombol Kirim button")
-	public void buyer_click_di_tombol_Kirim_button() {
-		WebUI.callTestCase(findTestCase('Pages/Buyer Bid/Click Kirim Button'), [:], FailureHandling.STOP_ON_FAILURE)
-		Mobile.swipe(300, 1400, 300, 1400 + 680)
-	}
-
-	@Then("buyer menunggu respon penjual")
-	public void buyer_menunggu_respon_penjual() {
-		WebUI.callTestCase(findTestCase('Pages/Buyer Bid/Verify Bid Valid'), [:], FailureHandling.STOP_ON_FAILURE)
+	@Then("seller verify Hubungi via Whatsapp button")
+	public void seller_verify_Hubungi_via_Whatsapp_button() {
+		WebUI.callTestCase(findTestCase('Pages/Update Status Seller/Verify Hubungi Via Whatsapp'), [:], FailureHandling.STOP_ON_FAILURE)
 	}
 }
