@@ -17,6 +17,5 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-Mobile.verifyElementVisible(findTestObject('Daftar Jual Saya/Detail/android.widget.TextView - Berhasil terjual status'), 
-    0)
+Mobile.verifyElementText(findTestObject('Daftar Jual Saya/Detail/android.widget.TextView - Berhasil terjual status'), 'Berhasil terjual')
 

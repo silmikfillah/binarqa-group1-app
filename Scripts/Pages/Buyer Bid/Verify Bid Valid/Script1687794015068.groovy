@@ -17,5 +17,5 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-Mobile.verifyElementExist(findTestObject('Product Detail/android.widget.Button - Menunggu respon penjual'), 0)
+Mobile.verifyElementText(findTestObject('Product Detail/android.widget.Button - Menunggu respon penjual'), 'Menunggu respon penjual')
 
