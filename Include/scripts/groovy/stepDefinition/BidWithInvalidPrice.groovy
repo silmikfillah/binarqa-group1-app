@@ -44,55 +44,54 @@ import cucumber.api.java.en.When
 
 
 
-class BidWithValidPrice {
-
-	@Given("buyer sudah login")
-	public void buyer_sudah_login() {
+class BidWithInvalidPrice {
+	@Given("buyer1 sudah login")
+	public void buyer1_sudah_login() {
 		WebUI.callTestCase(findTestCase('Pages/Navbar/Tap Akun'), [:], FailureHandling.STOP_ON_FAILURE)
 		WebUI.callTestCase(findTestCase('Pages/Akun/Tap Masuk from Akun Page'), [:], FailureHandling.STOP_ON_FAILURE)
-		WebUI.callTestCase(findTestCase('Pages/Login/Input Email'), [('email') : 'alexbeli1@gmail.com'], FailureHandling.STOP_ON_FAILURE)
+		WebUI.callTestCase(findTestCase('Pages/Login/Input Email'), [('email') : 'alexbeli@gmail.com'], FailureHandling.STOP_ON_FAILURE)
 		WebUI.callTestCase(findTestCase('Pages/Login/Input Password'), [('password') : 'asdqwe'], FailureHandling.STOP_ON_FAILURE)
 		WebUI.callTestCase(findTestCase('Pages/Login/Tap Button Masuk'), [:], FailureHandling.STOP_ON_FAILURE)
 	}
 
-	@Given("buyer berada di halaman produk")
-	public void buyer_berada_di_halaman_produk() {
+	@Given("buyer1 berada di halaman produk")
+	public void buyer1_berada_di_halaman_produk() {
 		WebUI.callTestCase(findTestCase('Pages/Navbar/Tap Beranda'), [:], FailureHandling.STOP_ON_FAILURE)
 	}
 
-	@When("buyer click search")
-	public void buyer_click_search() {
+	@When("buyer1 click search")
+	public void buyer1_click_search() {
 		WebUI.callTestCase(findTestCase('Pages/Homepage/Tap Search Field'), [:], FailureHandling.STOP_ON_FAILURE)
 	}
 
-	@When("buyer input {string}")
-	public void buyer_input(String search) {
+	@When("buyer1 input {string}")
+	public void buyer1_input(String search) {
 		WebUI.callTestCase(findTestCase('Pages/Search Page/Input Text Search Field'), [('searchText') : search], FailureHandling.STOP_ON_FAILURE)
 	}
-	
-	@When("buyer click first product")
-	public void buyer_click_first_product() {
+
+	@When("buyer1 click first product")
+	public void buyer1_click_first_product() {
 		WebUI.callTestCase(findTestCase('Pages/Buyer Bid/Click First Search'), [:], FailureHandling.STOP_ON_FAILURE)
 	}
 
-	@When("buyer click Saya tertarik dan ingin nego button")
-	public void buyer_click_Saya_tertarik_dan_ingin_nego_button() {
+	@When("buyer1 click Saya tertarik dan ingin nego button")
+	public void buyer1_click_Saya_tertarik_dan_ingin_nego_button() {
 		WebUI.callTestCase(findTestCase('Pages/Buyer Bid/Click Saya Tertarik dan Ingin Nego'), [:], FailureHandling.STOP_ON_FAILURE)
 	}
 
-	@When("buyer memasukan harga tawaran {string}")
-	public void buyer_memasukan_harga_tawaran(String harga) {
+	@When("buyer1 memasukan harga tawaran {string}")
+	public void buyer1_memasukan_harga_tawaran(String harga) {
 		WebUI.callTestCase(findTestCase('Pages/Buyer Bid/Input Harga Tawar'), [('harga') : harga], FailureHandling.STOP_ON_FAILURE)
 	}
 
-	@When("buyer click di tombol Kirim button")
-	public void buyer_click_di_tombol_Kirim_button() {
+	@When("buyer1 click di tombol Kirim button")
+	public void buyer1_click_di_tombol_Kirim_button() {
 		WebUI.callTestCase(findTestCase('Pages/Buyer Bid/Click Kirim Button'), [:], FailureHandling.STOP_ON_FAILURE)
 		Mobile.swipe(300, 1400, 300, 1400 + 680)
 	}
 
-	@Then("buyer menunggu respon penjual")
-	public void buyer_menunggu_respon_penjual() {
+	@Then("buyer1 menunggu respon penjual")
+	public void buyer1_menunggu_respon_penjual() {
 		WebUI.callTestCase(findTestCase('Pages/Buyer Bid/Verify Bid Valid'), [:], FailureHandling.STOP_ON_FAILURE)
 	}
 }

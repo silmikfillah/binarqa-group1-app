@@ -52,6 +52,7 @@ class Login {
 		Mobile.callTestCase(findTestCase('Pages/Login/Tap Masuk from Akun Page'), [:], FailureHandling.STOP_ON_FAILURE)
 	}
 
+
 	@When("I input email with (.*)")
 	public void i_input_email(String email) {
 		Mobile.callTestCase(findTestCase('Pages/Login/Verify Content Login Page'), [:], FailureHandling.STOP_ON_FAILURE)
