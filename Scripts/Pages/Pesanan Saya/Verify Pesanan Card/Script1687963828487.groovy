@@ -17,5 +17,12 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-Mobile.verifyElementVisible(findTestObject('Pesanan Saya/androidx.cardview.widget.CardView - Pesanan and Transaksi Card'), 0)
+Mobile.verifyElementVisible(findTestObject('Pesanan Saya/androidx.cardview.widget.CardView - Pesanan and Transaksi Card'), 
+    0)
+
+Mobile.waitForElementAttributeValue(findTestObject('Pesanan Saya/androidx.cardview.widget.CardView - Pesanan and Transaksi Card'), 
+    'clickable', 'true', 30)
+
+Mobile.verifyNotMatch(Mobile.getText(findTestObject('Daftar Jual Saya/android.widget.TextView - Product Name'), 0), '', 
+    false)
 

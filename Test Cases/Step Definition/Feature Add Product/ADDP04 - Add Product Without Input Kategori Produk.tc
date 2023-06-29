@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description></description>
+   <description>User want to add new product to sell without select item &quot;Kategori&quot; field  | Require: Login</description>
    <name>ADDP04 - Add Product Without Input Kategori Produk</name>
    <tag></tag>
    <comment></comment>

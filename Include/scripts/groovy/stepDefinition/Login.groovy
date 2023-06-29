@@ -74,7 +74,7 @@ class Login {
 	public void i_should_see_the_next_step(String status) {
 		if (status == 'success') {
 			Mobile.callTestCase(findTestCase('Pages/Login/Verify Login Valid'), [('status'):status], FailureHandling.STOP_ON_FAILURE)
-			Mobile.callTestCase(findTestCase('Pages/Akun/Click Logout'), [:], FailureHandling.STOP_ON_FAILURE)
+			Mobile.callTestCase(findTestCase('Pages/Akun/Tap Logout'), [:], FailureHandling.STOP_ON_FAILURE)
 		}
 		else if (status == 'incorrect') {
 			Mobile.callTestCase(findTestCase('Pages/Login/Verify Email or Password Incorrect'), [('status'):status], FailureHandling.STOP_ON_FAILURE)

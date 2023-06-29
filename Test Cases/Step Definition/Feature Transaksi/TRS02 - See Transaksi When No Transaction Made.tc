@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>User want to see &quot;Transaksi&quot; tab when no transaction made | Require: Login</description>
+   <name>TRS02 - See Transaksi When No Transaction Made</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>55a0e1a3-807f-4552-b99a-764b5ffb7a93</testCaseGuid>
+</TestCaseEntity>

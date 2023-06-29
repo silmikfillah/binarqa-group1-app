@@ -19,3 +19,7 @@ import org.openqa.selenium.Keys as Keys
 
 Mobile.verifyElementVisible(findTestObject('Daftar Jual Saya/android.view.ViewGroup - First Diminati'), 0)
 
+Mobile.waitForElementAttributeValue(findTestObject('Daftar Jual Saya/android.view.ViewGroup - First Diminati'), 'clickable', 'true', 30)
+
+Mobile.verifyNotMatch(Mobile.getText(findTestObject('Daftar Jual Saya/android.widget.TextView - Product Name'), 0), '', false)
+

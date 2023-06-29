@@ -43,5 +43,5 @@ Mobile.callTestCase(findTestCase('Pages/Register/Tap Button Daftar'), [:], Failu
 
 Mobile.callTestCase(findTestCase('Pages/Register/Verify Register Valid'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('Pages/Akun/Click Logout'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Pages/Akun/Tap Logout'), [:], FailureHandling.STOP_ON_FAILURE)
 

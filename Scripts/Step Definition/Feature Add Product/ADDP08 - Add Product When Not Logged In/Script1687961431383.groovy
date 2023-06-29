@@ -17,7 +17,13 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+WebUI.callTestCase(findTestCase('Pages/Homepage/Verify on Homepage'), [:], FailureHandling.STOP_ON_FAILURE)
+
+try {
+	WebUI.callTestCase(findTestCase('Pages/Homepage/Verify Not Logged In'), [:], FailureHandling.STOP_ON_FAILURE)
+} catch (Exception e) {
+	WebUI.callTestCase(findTestCase('Step Definition/Feature Logout/LGT01 - Logout'), [:], FailureHandling.STOP_ON_FAILURE)
+}
+
 WebUI.callTestCase(findTestCase('Pages/Navbar/Tap FAB Jual'), [:], FailureHandling.STOP_ON_FAILURE)
-
 WebUI.callTestCase(findTestCase('Pages/Add Product/Verify Not Login'), [:], FailureHandling.STOP_ON_FAILURE)
-

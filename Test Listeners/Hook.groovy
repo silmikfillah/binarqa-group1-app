@@ -39,7 +39,7 @@ class Hook {
 
   @AfterTestCase
   def afterTestCase(TestCaseContext testCaseContext) {
-	KeywordUtil.logInfo('Test Case: ' + testCaseContext.getTestCaseId())
+	KeywordUtil.logInfo('Test Case: ' + testCaseContext.getTestCaseId() + ' | Status: ' + testCaseContext.getTestCaseStatus())
 	Mobile.closeApplication()
  }
 
@@ -51,7 +51,7 @@ class Hook {
 
   @AfterTestSuite
   def afterTestSuite(TestSuiteContext testSuiteContext) {
-	KeywordUtil.logInfo('Test Suite: ' + testSuiteContext.getTestSuiteId())
+	KeywordUtil.logInfo('Test Suite: ' + testSuiteContext.getTestSuiteId() + ' | Status: ' + testSuiteContext.getStatus())
 	Mobile.closeApplication()
   }
 }

@@ -19,7 +19,7 @@ import org.openqa.selenium.Keys as Keys
 
 if (status == 'success') {
     Mobile.callTestCase(findTestCase('Pages/Register/Verify Register Valid'), [:], FailureHandling.STOP_ON_FAILURE)
-    Mobile.callTestCase(findTestCase('Pages/Akun/Click Logout'), [:], FailureHandling.STOP_ON_FAILURE)
+    Mobile.callTestCase(findTestCase('Pages/Akun/Tap Logout'), [:], FailureHandling.STOP_ON_FAILURE)
 } else if (status == 'invalid') {
     Mobile.callTestCase(findTestCase('Pages/Register/Read Error Message/Read Error Msg Invalid Email'), [('expected') : ''], 
         FailureHandling.STOP_ON_FAILURE)

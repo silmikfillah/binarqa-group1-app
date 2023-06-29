@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>Click Logout</name>
+   <name>Verify Already Logged In</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>8e481b53-4243-4c64-b93a-c6bbaa42d064</testCaseGuid>
+   <testCaseGuid>27adbe7a-a07a-4b0b-9f7a-48b3f829e5a2</testCaseGuid>
 </TestCaseEntity>
