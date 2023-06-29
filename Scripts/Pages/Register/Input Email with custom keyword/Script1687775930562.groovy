@@ -17,7 +17,11 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-String Email = CustomKeywords.'packages.randomEmail.getEmail'('gmail.com')
+String Email = CustomKeywords.'packages.randomEmail.getEmail'()
 
 Mobile.sendKeys(findTestObject('Register/android.widget.EditText - Email'), Email)
+
+//CustomKeywords.'packages.createGlobalVariables.addGlobalVariable'('email', Email)
+
+//println(GlobalVariable.email)
 

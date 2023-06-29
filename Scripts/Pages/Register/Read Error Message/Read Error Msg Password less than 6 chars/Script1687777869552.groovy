@@ -19,9 +19,9 @@ import org.openqa.selenium.Keys as Keys
 
 Mobile.verifyElementVisible(findTestObject('Register/android.widget.TextView - Password harus lebih dari 6 karakter'), 0)
 
-password6 = Mobile.getText(findTestObject('Register/android.widget.TextView - Password harus lebih dari 6 karakter'), 0)
+lessthan6 = Mobile.getText(findTestObject('Register/android.widget.TextView - Password harus lebih dari 6 karakter'), 0)
 
-com.kms.katalon.core.util.KeywordUtil.logInfo(password6)
+com.kms.katalon.core.util.KeywordUtil.logInfo(lessthan6)
 
-String expected = password6
+String expected = lessthan6
 

@@ -52,3 +52,20 @@ Feature: Login
     Examples: 
       | nama | statusnama | email | statusemail | password | nomor_hp | kota | alamat | status     |
       |      | testdata   |       | testdata    |          |          |      |        | empty nama |
+
+  @REG04
+  Scenario Outline: Verify to register with invalid password
+    Given I already installed the app and on the register page
+    When I input nama for register <nama> and <statusnama>
+    And I input email for register <email> and <statusemail>
+    And I input password for register <password>
+    And I input nomor hp with <nomor_hp>
+    And I input kota with <kota>
+    And I input alamat with <alamat>
+    And I click Register button
+    Then I should see the next step: <status> for register
+
+    Examples: 
+      | nama          | statusnama | email                | statusemail | password  | nomor_hp     | kota | alamat      | status         |
+      | less than six | testdata   | kurangdari6@mail.com | testdata    | 45a!      | 088811223344 | Sby  | Jln. Raya 1 | invalid pass   |
+      | empty pass    | testdata   | emptypass@test.com   | testdata    |           | 088811223344 | Sby  | Jln. Raya 3 | empty password |

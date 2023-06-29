@@ -24,14 +24,13 @@ Feature: Login
     Then I should see the next step <status>
 
     Examples: 
-      | email                   | password  | status      |
-      | unregistered@gmail.com  |  12345678 | incorrect   |
-      | incorrectmail@gmail.com |  12345678 | incorrect   |
-      |                         |  12345678 | empty email |
-      | groupsatu@gm            |  12345678 | invalid     |
-      | aa@ss                   |  12345678 | invalid     |
-      | namaku1357.com          | abc!12345 | invalid     |
-      | namaku1357gmail         | abc!12345 | invalid     |
+      | email                  | password  | status      |
+      | unregistered@gmail.com |  12345678 | incorrect   |
+      | groupsatuuuu@gmail.com |  12345678 | incorrect   |
+      |                        |  12345678 | empty email |
+      | groupsatu@yahoo        |  12345678 | invalid     |
+      | namaku1357.com         | abc!12345 | invalid     |
+      | namaku1357gmail        | abc!12345 | invalid     |
 
   @LGN03
   Scenario Outline: Verify to login without enter any data into the fields

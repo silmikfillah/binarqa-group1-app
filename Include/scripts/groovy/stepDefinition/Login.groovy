@@ -47,7 +47,8 @@ import cucumber.api.java.en.When
 class Login {
 	@Given("I already register an account and on the login page")
 	public void i_already_register_an_account_and_on_the_login_page() {
-		Mobile.startApplication('Apk/app-release-second-hand-gcp.apk', true)
+		//Mobile.startExistingApplication('id.binar.fp.secondhand', FailureHandling.STOP_ON_FAILURE)
+		Mobile.startApplication(System.getProperty("user.dir") + "\\Apk\\app-release-second-hand-gcp.apk", false)
 		Mobile.callTestCase(findTestCase('Pages/Navbar/Click Akun'), [:], FailureHandling.STOP_ON_FAILURE)
 		Mobile.callTestCase(findTestCase('Pages/Login/Tap Masuk from Akun Page'), [:], FailureHandling.STOP_ON_FAILURE)
 	}
@@ -73,6 +74,7 @@ class Login {
 	public void i_should_see_the_next_step(String status) {
 		if (status == 'success') {
 			Mobile.callTestCase(findTestCase('Pages/Login/Verify Login Valid'), [('status'):status], FailureHandling.STOP_ON_FAILURE)
+			Mobile.callTestCase(findTestCase('Pages/Akun/Click Logout'), [:], FailureHandling.STOP_ON_FAILURE)
 		}
 		else if (status == 'incorrect') {
 			Mobile.callTestCase(findTestCase('Pages/Login/Verify Email or Password Incorrect'), [('status'):status], FailureHandling.STOP_ON_FAILURE)
