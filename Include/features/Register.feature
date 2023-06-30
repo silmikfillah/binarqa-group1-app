@@ -1,4 +1,4 @@
-Feature: Login
+Feature: Register
   As a user, I want to register in Secondhand Store app.
 
   @REG01
@@ -66,6 +66,6 @@ Feature: Login
     Then I should see the next step: <status> for register
 
     Examples: 
-      | nama          | statusnama | email                | statusemail | password  | nomor_hp     | kota | alamat      | status         |
-      | less than six | testdata   | kurangdari6@mail.com | testdata    | 45a!      | 088811223344 | Sby  | Jln. Raya 1 | invalid pass   |
-      | empty pass    | testdata   | emptypass@test.com   | testdata    |           | 088811223344 | Sby  | Jln. Raya 3 | empty password |
+      | nama          | statusnama | email                | statusemail | password | nomor_hp     | kota | alamat      | status         |
+      | less than six | testdata   | kurangdari6@mail.com | testdata    | 45a!     | 088811223344 | Sby  | Jln. Raya 1 | invalid pass   |
+      | empty pass    | testdata   | emptypass@test.com   | testdata    |          | 088811223344 | Sby  | Jln. Raya 3 | empty password |
