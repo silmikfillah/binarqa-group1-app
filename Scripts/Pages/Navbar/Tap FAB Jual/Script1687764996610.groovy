@@ -17,5 +17,5 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-Mobile.tap(findTestObject('Navbar/android.widget.ImageButton - Add Product'), 0)
+Mobile.tap(findTestObject('Navbar/android.widget.ImageButton - FAB Add Product'), 0)
 

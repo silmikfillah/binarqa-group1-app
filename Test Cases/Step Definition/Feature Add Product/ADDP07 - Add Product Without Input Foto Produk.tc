@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description></description>
+   <description>User want to add new product to sell without upload image in Foto Produk field  | Require: Login</description>
    <name>ADDP07 - Add Product Without Input Foto Produk</name>
    <tag></tag>
    <comment></comment>

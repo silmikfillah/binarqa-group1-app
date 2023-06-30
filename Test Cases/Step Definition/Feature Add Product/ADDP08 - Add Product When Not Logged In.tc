@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description></description>
+   <description>User Tap FAB &quot;Jual&quot; When Not Logged In</description>
    <name>ADDP08 - Add Product When Not Logged In</name>
    <tag></tag>
    <comment></comment>

@@ -69,7 +69,7 @@ class BidWithValidPrice {
 	public void buyer_input(String search) {
 		WebUI.callTestCase(findTestCase('Pages/Search Page/Input Text Search Field'), [('searchText') : search], FailureHandling.STOP_ON_FAILURE)
 	}
-	
+
 	@When("buyer click first product")
 	public void buyer_click_first_product() {
 		WebUI.callTestCase(findTestCase('Pages/Buyer Bid/Click First Search'), [:], FailureHandling.STOP_ON_FAILURE)

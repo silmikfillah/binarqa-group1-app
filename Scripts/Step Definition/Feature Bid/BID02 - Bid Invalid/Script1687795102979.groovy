@@ -41,6 +41,8 @@ WebUI.callTestCase(findTestCase('Pages/Buyer Bid/Input Harga Tawar'), [('harga')
 
 WebUI.callTestCase(findTestCase('Pages/Buyer Bid/Click Kirim Button'), [:], FailureHandling.STOP_ON_FAILURE)
 
+WebUI.callTestCase(findTestCase('Pages/Buyer Bid/Refresh'), [:], FailureHandling.STOP_ON_FAILURE)
+
 WebUI.callTestCase(findTestCase('Pages/Buyer Bid/Verify Bid Valid'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.callTestCase(findTestCase('Pages/Buyer Bid/Click Back'), [:], FailureHandling.STOP_ON_FAILURE)
@@ -49,5 +51,5 @@ WebUI.callTestCase(findTestCase('Pages/Buyer Bid/Click Back'), [:], FailureHandl
 
 WebUI.callTestCase(findTestCase('Pages/Navbar/Tap Akun'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('Pages/Akun/Click Logout'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Pages/Akun/Tap Logout'), [:], FailureHandling.STOP_ON_FAILURE)
 

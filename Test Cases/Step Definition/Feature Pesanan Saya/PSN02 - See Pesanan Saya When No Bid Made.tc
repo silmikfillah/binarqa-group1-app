@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>User see &quot;Pesanan Saya&quot; list when not made a bid yet | Require: Login</description>
+   <name>PSN02 - See Pesanan Saya When No Bid Made</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>d5813104-e484-48a7-977a-92567fbd42e3</testCaseGuid>
+</TestCaseEntity>

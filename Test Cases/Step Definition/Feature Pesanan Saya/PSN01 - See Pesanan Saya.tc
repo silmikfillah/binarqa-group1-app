@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>User see &quot;Pesanan Saya&quot; list when already made a bid | Require: Login and Bid Product</description>
+   <name>PSN01 - See Pesanan Saya</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>eff7f921-7fc7-41b2-959a-b7e57f63c6fc</testCaseGuid>
+</TestCaseEntity>

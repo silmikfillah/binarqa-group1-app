@@ -12,7 +12,7 @@
          <iterationType>ALL</iterationType>
          <value></value>
       </iterationEntity>
-      <testDataId>Data Files/register-invalidemail-app</testDataId>
+      <testDataId>Data Files/register-invalidemail</testDataId>
    </testDataLinks>
    <variableLinks>
       <testDataLinkId>737c033c-251e-4c53-8a07-20f7a0129625</testDataLinkId>

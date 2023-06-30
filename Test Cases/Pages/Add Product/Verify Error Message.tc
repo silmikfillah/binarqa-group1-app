@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Error Message for Nama or Harga or Lokasi or Deskripsi is Empty</description>
+   <name>Verify Error Message</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>1579bd13-edf5-404b-adc3-b0eef254b439</testCaseGuid>
+</TestCaseEntity>

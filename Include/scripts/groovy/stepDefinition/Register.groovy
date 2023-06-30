@@ -46,7 +46,7 @@ class Register {
 	@Given("I already installed the app and on the register page")
 	public void i_already_installed_the_app_and_on_the_register_page() {
 		//Mobile.startExistingApplication('id.binar.fp.secondhand', FailureHandling.STOP_ON_FAILURE)
-		Mobile.startApplication(System.getProperty("user.dir") + "\\Apk\\app-release-second-hand-gcp.apk", true)
+		Mobile.startApplication(System.getProperty("user.dir") + "\\Apk\\app-release-second-hand-gcp.apk", false)
 		Mobile.callTestCase(findTestCase('Pages/Navbar/Tap Akun'), [:], FailureHandling.STOP_ON_FAILURE)
 		Mobile.callTestCase(findTestCase('Pages/Akun/Tap Masuk from Akun Page'), [:], FailureHandling.STOP_ON_FAILURE)
 		Mobile.callTestCase(findTestCase('Pages/Register/Tap Daftar from login page'), [:], FailureHandling.STOP_ON_FAILURE)
@@ -89,8 +89,8 @@ class Register {
 
 	@And("I input alamat with (.*)")
 	public void i_input_alamat_with(String alamat) {
-		Mobile.callTestCase(findTestCase('Pages/Register/Input Alamat'), [('alamat') : alamat], FailureHandling.STOP_ON_FAILURE)
 		Mobile.callTestCase(findTestCase('Pages/Register/Scroll to Text Sudah Punya Akun'), [:], FailureHandling.STOP_ON_FAILURE)
+		Mobile.callTestCase(findTestCase('Pages/Register/Input Alamat'), [('alamat') : alamat], FailureHandling.STOP_ON_FAILURE)
 	}
 
 	@And("I click Register button")
