@@ -23,34 +23,8 @@ import cucumber.api.java.en.Then
 import internal.GlobalVariable
 
 public class DeleteProduct {
-	@Given("User login as seller")
-	public void user_login_as_seller() {
-		Mobile.callTestCase(findTestCase('Test Cases/Step Definition/Feature Login/LGN01 - User login with valid credentials'), null)
-	}
-
-	@When("User tab akun")
-	public void user_tab_akun() {
-		Mobile.callTestCase(findTestCase('Pages/Navbar/Tap Akun'), [:], FailureHandling.STOP_ON_FAILURE)
-	}
-
-	@When("User tab Daftar Product")
-	public void user_tab_daftar_product() {
-		Mobile.callTestCase(findTestCase('Pages/Akun/Tap Daftar Jual Saya'), [:], FailureHandling.STOP_ON_FAILURE)
-	}
-
-	@When("User tap product")
-	public void user_tap_product() {
-		Mobile.callTestCase(findTestCase('Pages/Edit Product/Tap Product'), [:], FailureHandling.STOP_ON_FAILURE)
-	}
-
 	@When("User tap button trash")
 	public void user_tap_button_trash() {
 		Mobile.callTestCase(findTestCase('Pages/Delete Product/Tap button Trash'), [:], FailureHandling.STOP_ON_FAILURE)
-	}
-
-	@Then("User will be redirected to daftar jual saya page")
-	public void user_will_be_redirected_to_daftar_jual_saya_page() {
-		Mobile.delay(2)
-		Mobile.callTestCase(findTestCase('Pages/Edit Product/Verify Success Message'), [:], FailureHandling.STOP_ON_FAILURE)
 	}
 }

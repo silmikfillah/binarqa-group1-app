@@ -19,6 +19,12 @@ import org.openqa.selenium.Keys as Keys
 
 try {
 	WebUI.callTestCase(findTestCase('Pages/Homepage/Verify Already Logged In'), [:], FailureHandling.STOP_ON_FAILURE)
+	try {
+		WebUI.callTestCase(findTestCase('Pages/Daftar Jual Saya/Verify Account Have Product'), [:], FailureHandling.STOP_ON_FAILURE)
+	} catch (Exception e) {
+		WebUI.callTestCase(findTestCase('Step Definition/Feature Logout/LGT01 - Logout'), [:], FailureHandling.STOP_ON_FAILURE)
+		WebUI.callTestCase(findTestCase('Step Definition/Feature Login/LGN01 - User login with valid credentials'), [('email'):'garasimobil@mytestmail.net', ('password'):'a1b2c3d4'])
+	}
 } catch (Exception e) {
 	WebUI.callTestCase(findTestCase('Step Definition/Feature Login/LGN01 - User login with valid credentials'), [('email'):'garasimobil@mytestmail.net', ('password'):'a1b2c3d4'])
 }
