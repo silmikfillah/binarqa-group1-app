@@ -22,7 +22,7 @@ import cucumber.api.java.en.Given
 import cucumber.api.java.en.Then
 import internal.GlobalVariable
 
-public class EditProduct {
+public class DeleteProduct {
 	@Given("User login as seller")
 	public void user_login_as_seller() {
 		Mobile.callTestCase(findTestCase('Test Cases/Step Definition/Feature Login/LGN01 - User login with valid credentials'), null)
@@ -43,36 +43,9 @@ public class EditProduct {
 		Mobile.callTestCase(findTestCase('Pages/Edit Product/Tap Product'), [:], FailureHandling.STOP_ON_FAILURE)
 	}
 
-	@When("User input product name")
-	public void user_input_product_name() {
-		Mobile.callTestCase(findTestCase('Pages/Edit Product/Edit Nama Produk'), [('namaProduk') : 'Baju'], FailureHandling.STOP_ON_FAILURE)
-	}
-
-	@When("User input product price")
-	public void user_input_product_price() {
-		Mobile.setText(findTestObject('Object Repository/Add Product/android.widget.EditText - Harga Produk'), '1000000', 0)
-	}
-
-	@When("User choose category")
-	public void user_choose_category() {
-		Mobile.tap(findTestObject('Object Repository/Add Product/android.widget.Spinner - Pilih Kategori'), 0)
-		Mobile.tap(findTestObject('Object Repository/Add Product/Pilih Kategori Pertama'), 0)
-	}
-
-	@When("User input location")
-	public void user_input_location() {
-		Mobile.setText(findTestObject('Object Repository/Add Product/android.widget.EditText - Lokasi Produk'), 'Serang', 0)
-	}
-
-	@When("User input product description")
-	public void user_input_product_description() {
-		Mobile.setText(findTestObject('Object Repository/Add Product/android.widget.EditText - Deskripsi Produk'), 'mesin cuci mini', 0)
-	}
-
-
-	@When("Click publish button")
-	public void click_publish_button() {
-		Mobile.callTestCase(findTestCase('Pages/Edit Product/Tap Terbitkan Button'), [:], FailureHandling.STOP_ON_FAILURE)
+	@When("User tap button trash")
+	public void user_tap_button_trash() {
+		Mobile.callTestCase(findTestCase('Pages/Delete Product/Tap button Trash'), [:], FailureHandling.STOP_ON_FAILURE)
 	}
 
 	@Then("User will be redirected to daftar jual saya page")

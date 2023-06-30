@@ -26,22 +26,7 @@ WebUI.callTestCase(findTestCase('Pages/Akun/Tap Daftar Jual Saya'), [:], Failure
 
 WebUI.callTestCase(findTestCase('Pages/Daftar Jual Saya/Tap Tab Produk'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('Pages/Edit Product/Verify Product Card Exist'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Pages/Delete Product/Tap button Trash'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('Pages/Edit Product/Tap Produk'), [:], FailureHandling.STOP_ON_FAILURE)
-
-WebUI.callTestCase(findTestCase('Pages/Edit Product/Edit Nama Produk'), [('namaProduk') : 'Baju'], FailureHandling.STOP_ON_FAILURE)
-
-WebUI.callTestCase(findTestCase('Pages/Edit Product/Edit Harga Produk'), [('hargaProduk') : '100000'], FailureHandling.STOP_ON_FAILURE)
-
-WebUI.callTestCase(findTestCase('Pages/Edit Product/Edit Kategori Produk'), [('kategoriProduk') : 'Kesehatan'], FailureHandling.STOP_ON_FAILURE)
-
-WebUI.callTestCase(findTestCase('Pages/Edit Product/Edit Deskripsi Produk'), [('deskripsiProduk') : 'baju kualitas terbaik'], 
-    FailureHandling.STOP_ON_FAILURE)
-
-WebUI.callTestCase(findTestCase('Pages/Edit Product/Edit Lokasi Produk'), [('lokasiProduk') : 'Jakarta'], FailureHandling.STOP_ON_FAILURE)
-
-WebUI.callTestCase(findTestCase('Pages/Edit Product/Tap Terbitkan Button'), [:], FailureHandling.STOP_ON_FAILURE)
-
-WebUI.callTestCase(findTestCase('Pages/Edit Product/Verify Success Message'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Pages/Daftar Jual Saya/Verify In Daftar Jual Saya Page'), [:], FailureHandling.STOP_ON_FAILURE)
 
