@@ -26,6 +26,8 @@ WebUI.callTestCase(findTestCase('Pages/Akun/Tap Daftar Jual Saya'), [:], Failure
 
 WebUI.callTestCase(findTestCase('Pages/Daftar Jual Saya/Tap Tab Produk'), [:], FailureHandling.STOP_ON_FAILURE)
 
+WebUI.callTestCase(findTestCase('Pages/Edit Product/Verify Product Card Exist'), [:], FailureHandling.STOP_ON_FAILURE)
+
 WebUI.callTestCase(findTestCase('Pages/Edit Product/Tap Produk'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.callTestCase(findTestCase('Pages/Edit Product/Edit Nama Produk'), [('namaProduk') : 'Baju'], FailureHandling.STOP_ON_FAILURE)
