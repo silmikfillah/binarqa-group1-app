@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Verify Account Have No Order</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>b88af4c9-1fee-4089-a049-41f8ef5292ae</testCaseGuid>
+</TestCaseEntity>

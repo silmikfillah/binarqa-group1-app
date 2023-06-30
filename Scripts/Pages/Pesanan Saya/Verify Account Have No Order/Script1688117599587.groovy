@@ -17,21 +17,8 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-try {
-	WebUI.callTestCase(findTestCase('Pages/Homepage/Verify Already Logged In'), [:], FailureHandling.STOP_ON_FAILURE)
-	try {
-		WebUI.callTestCase(findTestCase('Pages/Pesanan Saya/Verify Account Have Order'), [:], FailureHandling.STOP_ON_FAILURE)
-	} catch (Exception e) {
-		WebUI.callTestCase(findTestCase('Step Definition/Feature Logout/LGT01 - Logout'), [:], FailureHandling.STOP_ON_FAILURE)
-		WebUI.callTestCase(findTestCase('Step Definition/Feature Login/LGN01 - User login with valid credentials'), [('email'):'peter.rg@gmail.com', ('password'):'a1b2c3d4'])
-	}
-} catch (Exception e) {
-	WebUI.callTestCase(findTestCase('Step Definition/Feature Login/LGN01 - User login with valid credentials'), [('email'):'peter.rg@gmail.com', ('password'):'a1b2c3d4'])
-}
+Mobile.tap(findTestObject('Navbar/android.widget.FrameLayout - Navbar Akun'), 0)
 
-WebUI.callTestCase(findTestCase('Pages/Navbar/Tap Transaksi'), [:], FailureHandling.STOP_ON_FAILURE)
-
-WebUI.callTestCase(findTestCase('Pages/Transaksi/Verify On Transaksi Page'), [:], FailureHandling.STOP_ON_FAILURE)
-
-WebUI.callTestCase(findTestCase('Pages/Transaksi/Verify Transaction Card'), [:], FailureHandling.STOP_ON_FAILURE)
+Mobile.verifyMatch(Mobile.getText(findTestObject('Akun/android.widget.TextView - Email'), 0), 'qatest@mytestmail.net', 
+    false)
 
