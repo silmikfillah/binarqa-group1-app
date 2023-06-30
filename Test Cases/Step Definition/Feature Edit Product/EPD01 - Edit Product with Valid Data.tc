@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>EP01 - Edit Product with Valid Credential</name>
+   <name>EPD01 - Edit Product with Valid Data</name>
    <tag></tag>
    <comment></comment>
    <testCaseGuid>fe6d30c9-cdef-433c-88da-71a29488cf33</testCaseGuid>

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>EP02 - Edit Product with Invalid Credential</name>
+   <name>Verify Success Message</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>ab214d3f-72ad-4a72-984d-1707d2445689</testCaseGuid>
+   <testCaseGuid>90119969-ba33-4ae9-a0e0-d49edc98fe53</testCaseGuid>
 </TestCaseEntity>

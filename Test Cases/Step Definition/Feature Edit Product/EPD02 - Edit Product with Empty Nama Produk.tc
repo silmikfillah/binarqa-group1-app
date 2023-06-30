@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>EP03 - Edit Product with Empty Product</name>
+   <name>EPD02 - Edit Product with Empty Nama Produk</name>
    <tag></tag>
    <comment></comment>
    <testCaseGuid>44165860-5b33-484a-9211-95a89fbd61c4</testCaseGuid>

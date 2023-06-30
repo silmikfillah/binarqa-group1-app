@@ -17,11 +17,5 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-Mobile.waitForElementPresent(findTestObject('Daftar Jual Saya/androidx.cardview.widget.CardView - First Product Card'), 
-    30)
-
-Mobile.verifyElementVisible(findTestObject('Daftar Jual Saya/androidx.cardview.widget.CardView - First Product Card'), 0)
-
-Mobile.verifyNotMatch(Mobile.getText(findTestObject('Daftar Jual Saya/android.widget.TextView - Product Name'), 0), '', 
-    false)
+Mobile.tap(findTestObject('Daftar Jual Saya/android.widget.LinearLayout - Hapus'), 0)
 

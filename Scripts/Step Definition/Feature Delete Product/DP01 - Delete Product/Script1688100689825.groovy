@@ -17,16 +17,15 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.callTestCase(findTestCase('Step Definition/Feature Login/LGN01 - User login with valid credentials'), [('email') : 'groupsatu@gmail.com'
-        , ('password') : 'abc!12345'], FailureHandling.STOP_ON_FAILURE)
+try {
+	WebUI.callTestCase(findTestCase('Pages/Homepage/Verify Already Logged In'), [:], FailureHandling.STOP_ON_FAILURE)
+} catch (Exception e) {
+	WebUI.callTestCase(findTestCase('Step Definition/Feature Login/LGN01 - User login with valid credentials'), [('email') : 'groupsatu@gmail.com', ('password') : 'abc!12345'])
+}
 
 WebUI.callTestCase(findTestCase('Pages/Navbar/Tap Akun'), [:], FailureHandling.STOP_ON_FAILURE)
-
 WebUI.callTestCase(findTestCase('Pages/Akun/Tap Daftar Jual Saya'), [:], FailureHandling.STOP_ON_FAILURE)
-
 WebUI.callTestCase(findTestCase('Pages/Daftar Jual Saya/Tap Tab Produk'), [:], FailureHandling.STOP_ON_FAILURE)
-
 WebUI.callTestCase(findTestCase('Pages/Delete Product/Tap button Trash'), [:], FailureHandling.STOP_ON_FAILURE)
-
-WebUI.callTestCase(findTestCase('Pages/Daftar Jual Saya/Verify In Daftar Jual Saya Page'), [:], FailureHandling.STOP_ON_FAILURE)
-
+WebUI.callTestCase(findTestCase('Pages/Delete Product/Tap Hapus in Prompt'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Pages/Delete Product/Verify Success Message'), [:], FailureHandling.STOP_ON_FAILURE)

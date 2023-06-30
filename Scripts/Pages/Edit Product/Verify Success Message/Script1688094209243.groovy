@@ -19,5 +19,5 @@ import org.openqa.selenium.Keys as Keys
 
 Mobile.verifyElementVisible(findTestObject('Add Product/android.widget.TextView - Success Message'), 0)
 
-Mobile.verifyMatch(Mobile.getText(findTestObject('Add Product/android.widget.TextView - Success Message'), 0), 'Produk berhasil diterbitkan',
+Mobile.verifyMatch(Mobile.getText(findTestObject('Add Product/android.widget.TextView - Success Message'), 0), 'Produk berhasil diperbarui',
 	false)
