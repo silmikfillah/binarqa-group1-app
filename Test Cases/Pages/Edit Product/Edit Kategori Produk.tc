@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Edit Kategori Produk</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>eb83bc18-0b44-4327-93e5-c7dd3a26f74b</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>c46b291f-3388-42a3-a68f-70c01a67dd8b</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'Kesehatan'</defaultValue>
+      <description></description>
+      <id>c46b291f-3388-42a3-a68f-70c01a67dd8b</id>
+      <masked>false</masked>
+      <name>kategoriProduk</name>
+   </variable>
+</TestCaseEntity>
