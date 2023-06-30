@@ -20,11 +20,22 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import cucumber.api.java.en.When
 import cucumber.api.java.en.Given
 import cucumber.api.java.en.Then
+import cucumber.api.java.en.And
 import internal.GlobalVariable
 
 public class DeleteProduct {
 	@When("User tap button trash")
 	public void user_tap_button_trash() {
-		Mobile.callTestCase(findTestCase('Pages/Delete Product/Tap button Trash'), [:], FailureHandling.STOP_ON_FAILURE)
+		WebUI.callTestCase(findTestCase('Pages/Delete Product/Tap button Trash'), [:], FailureHandling.STOP_ON_FAILURE)
+	}
+	
+	@And("User tap Hapus")
+	public void user_tap_Hapus() {
+		WebUI.callTestCase(findTestCase('Pages/Delete Product/Tap Hapus in Prompt'), [:], FailureHandling.STOP_ON_FAILURE)
+	}
+	
+	@Then("User will see success delete message")
+	public void user_will_see_success_delete_message() {
+		WebUI.callTestCase(findTestCase('Pages/Delete Product/Verify Success Message'), [:], FailureHandling.STOP_ON_FAILURE)
 	}
 }
