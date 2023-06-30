@@ -12,7 +12,6 @@ Feature: Login
 
     Examples: 
       | email                    | password  | status  |
-      | silmi.k.fillah@gmail.com |  12345678 | success |
       | groupsatu@gmail.com      | abc!12345 | success |
 
   @LGN02 @LGN05
@@ -53,5 +52,6 @@ Feature: Login
     Then I should see the next step <status>
 
     Examples: 
-      | email               | password | status    |
-      | groupsatu@gmail.com | abc!!!22 | incorrect |
+      | email               | password | status       |
+      | groupsatu@gmail.com | abc!!!22 | incorrect    |
+      | groupsatu@gmail.com | a12q     | invalid pass |

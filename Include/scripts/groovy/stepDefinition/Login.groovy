@@ -49,8 +49,8 @@ class Login {
 	public void i_already_register_an_account_and_on_the_login_page() {
 		//Mobile.startExistingApplication('id.binar.fp.secondhand', FailureHandling.STOP_ON_FAILURE)
 		Mobile.startApplication(System.getProperty("user.dir") + "\\Apk\\app-release-second-hand-gcp.apk", false)
-		Mobile.callTestCase(findTestCase('Pages/Navbar/Click Akun'), [:], FailureHandling.STOP_ON_FAILURE)
-		Mobile.callTestCase(findTestCase('Pages/Login/Tap Masuk from Akun Page'), [:], FailureHandling.STOP_ON_FAILURE)
+		Mobile.callTestCase(findTestCase('Pages/Navbar/Tap Akun'), [:], FailureHandling.STOP_ON_FAILURE)
+		Mobile.callTestCase(findTestCase('Pages/Akun/Tap Masuk from Akun Page'), [:], FailureHandling.STOP_ON_FAILURE)
 	}
 
 
@@ -84,6 +84,9 @@ class Login {
 		}
 		else if (status == 'empty email') {
 			Mobile.callTestCase(findTestCase('Pages/Login/Verify Invalid Empty Email'), [('status'):status], FailureHandling.STOP_ON_FAILURE)
+		}
+		else if (status == 'invalid pass') {
+			Mobile.callTestCase(findTestCase('Pages/Login/Verify Invalid Password less than 6 chars'), [('status'):status], FailureHandling.STOP_ON_FAILURE)
 		}
 		Mobile.closeApplication()
 	}
