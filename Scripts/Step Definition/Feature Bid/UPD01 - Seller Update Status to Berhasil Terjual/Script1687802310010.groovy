@@ -45,3 +45,11 @@ WebUI.callTestCase(findTestCase('Pages/Update Status Seller/Click Simpan'), [:],
 
 WebUI.callTestCase(findTestCase('Pages/Update Status Seller/Verify Berhasil Terjual'), [:], FailureHandling.STOP_ON_FAILURE)
 
+WebUI.callTestCase(findTestCase('Pages/Buyer Bid/Click Back'), [:], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.callTestCase(findTestCase('Pages/Buyer Bid/Click Back'), [:], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.callTestCase(findTestCase('Pages/Navbar/Tap Akun'), [:], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.callTestCase(findTestCase('Pages/Akun/Tap Logout'), [:], FailureHandling.STOP_ON_FAILURE)
+

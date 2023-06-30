@@ -21,7 +21,7 @@ WebUI.callTestCase(findTestCase('Pages/Navbar/Tap Akun'), [:], FailureHandling.S
 
 WebUI.callTestCase(findTestCase('Pages/Akun/Tap Masuk from Akun Page'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('Pages/Login/Input Email'), [('email') : 'alexbeli@gmail.com'], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Pages/Login/Input Email'), [('email') : 'alexbeli2@gmail.com'], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.callTestCase(findTestCase('Pages/Login/Input Password'), [('password') : 'asdqwe'], FailureHandling.STOP_ON_FAILURE)
 
@@ -31,7 +31,8 @@ WebUI.callTestCase(findTestCase('Pages/Navbar/Tap Beranda'), [:], FailureHandlin
 
 WebUI.callTestCase(findTestCase('Pages/Homepage/Tap Search Field'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('Pages/Search Page/Input Text Search Field'), [('searchText') : 'Zxcasd'], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Pages/Search Page/Input Text Search Field'), [('searchText') : 'Produk Bid Valid 01'], 
+    FailureHandling.STOP_ON_FAILURE)
 
 WebUI.callTestCase(findTestCase('Pages/Buyer Bid/Click First Search'), [:], FailureHandling.STOP_ON_FAILURE)
 
