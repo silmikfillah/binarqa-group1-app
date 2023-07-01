@@ -31,7 +31,7 @@ Mobile.callTestCase(findTestCase('Pages/Register/Input Nama with custom keyword'
 
 Mobile.callTestCase(findTestCase('Pages/Register/Input Email with custom keyword'), [('email') : ''], FailureHandling.STOP_ON_FAILURE)
 
-Mobile.callTestCase(findTestCase('Pages/Register/Input Password'), [('password') : 'abc!12345'], FailureHandling.STOP_ON_FAILURE)
+Mobile.callTestCase(findTestCase('Pages/Register/Input Password'), [('password') : GlobalVariable.password], FailureHandling.STOP_ON_FAILURE)
 
 Mobile.callTestCase(findTestCase('Pages/Register/Input Nomor Hp'), [('nomor_hp') : '081122334455'], FailureHandling.STOP_ON_FAILURE)
 
