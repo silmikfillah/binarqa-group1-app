@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>EP1-Edit Profile</name>
+   <name>edit_email</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>0ca9bcc2-ae04-4eb8-93a4-402136697ca8</testCaseGuid>
+   <testCaseGuid>edc0264e-eb31-4629-8305-55b0a82930cd</testCaseGuid>
 </TestCaseEntity>
