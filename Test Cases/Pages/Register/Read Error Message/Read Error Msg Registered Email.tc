@@ -9,13 +9,13 @@
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>bc238dfd-f44d-426d-a0fa-2d8d2ba3c81a</variableId>
+      <variableId>e8570e6a-6344-4fe3-84dc-695b0f42d0d4</variableId>
    </variableLinks>
    <variable>
       <defaultValue>''</defaultValue>
       <description></description>
-      <id>bc238dfd-f44d-426d-a0fa-2d8d2ba3c81a</id>
+      <id>e8570e6a-6344-4fe3-84dc-695b0f42d0d4</id>
       <masked>false</masked>
-      <name>expected</name>
+      <name>variable</name>
    </variable>
 </TestCaseEntity>

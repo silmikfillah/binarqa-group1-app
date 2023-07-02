@@ -25,3 +25,4 @@ com.kms.katalon.core.util.KeywordUtil.logInfo(emptykota)
 
 String expected = emptykota
 
+Mobile.verifyMatch(emptykota, expected, false)

@@ -23,47 +23,56 @@
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Step Definition/Feature Register/REG02 - User register with invalid email</testCaseId>
+      <testDataLink>
+         <combinationType>ONE</combinationType>
+         <id>3ed1d5b3-0cd0-44af-a4e3-616bfb94fb10</id>
+         <iterationEntity>
+            <iterationType>ALL</iterationType>
+            <value></value>
+         </iterationEntity>
+         <testDataId>Data Files/register-invalidemail</testDataId>
+      </testDataLink>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
+         <testDataLinkId>3ed1d5b3-0cd0-44af-a4e3-616bfb94fb10</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>nama</value>
          <variableId>1d1a6ab8-a07f-4f56-a10b-3377acac3793</variableId>
       </variableLink>
       <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
+         <testDataLinkId>3ed1d5b3-0cd0-44af-a4e3-616bfb94fb10</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>email</value>
          <variableId>860604e9-242f-4fc1-a02b-706b6a4a45b5</variableId>
       </variableLink>
       <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
+         <testDataLinkId>3ed1d5b3-0cd0-44af-a4e3-616bfb94fb10</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>password</value>
          <variableId>79b49b54-857b-49c0-8153-7cc3d6e77317</variableId>
       </variableLink>
       <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
+         <testDataLinkId>3ed1d5b3-0cd0-44af-a4e3-616bfb94fb10</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>kota</value>
          <variableId>6caa9af8-1ef7-48bc-9781-085405f14aab</variableId>
       </variableLink>
       <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
+         <testDataLinkId>3ed1d5b3-0cd0-44af-a4e3-616bfb94fb10</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>alamat</value>
          <variableId>6d2859b6-bc96-4bed-8f36-6ecac3eafc61</variableId>
       </variableLink>
       <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
+         <testDataLinkId>3ed1d5b3-0cd0-44af-a4e3-616bfb94fb10</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>nomor_hp</value>
          <variableId>15e10dd3-7b48-4b9f-9b1e-7ed8ecd73434</variableId>
       </variableLink>
       <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
+         <testDataLinkId>3ed1d5b3-0cd0-44af-a4e3-616bfb94fb10</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>status</value>
          <variableId>de18cee4-0b3c-4dce-8066-c1cfc32a07c6</variableId>
       </variableLink>
    </testCaseLink>
@@ -79,48 +88,115 @@
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Step Definition/Feature Register/REG04 - User register with invalid password</testCaseId>
+      <testDataLink>
+         <combinationType>ONE</combinationType>
+         <id>963318cd-77f6-4a3a-94b3-4c167f29e714</id>
+         <iterationEntity>
+            <iterationType>ALL</iterationType>
+            <value></value>
+         </iterationEntity>
+         <testDataId>Data Files/register-invalidpass</testDataId>
+      </testDataLink>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
+         <testDataLinkId>963318cd-77f6-4a3a-94b3-4c167f29e714</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>nama</value>
          <variableId>460571da-1946-424a-9faa-0ac9b7c2e036</variableId>
       </variableLink>
       <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
+         <testDataLinkId>963318cd-77f6-4a3a-94b3-4c167f29e714</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>email</value>
          <variableId>7168f005-5920-417f-9305-aa3873d6a6f4</variableId>
       </variableLink>
       <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
+         <testDataLinkId>963318cd-77f6-4a3a-94b3-4c167f29e714</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>password</value>
          <variableId>2da65ec5-0091-40a5-9198-12fa24b24f4b</variableId>
       </variableLink>
       <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
+         <testDataLinkId>963318cd-77f6-4a3a-94b3-4c167f29e714</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>nomor_hp</value>
          <variableId>3f56145a-cad0-4e9b-aa5a-b38e3ca17b8e</variableId>
       </variableLink>
       <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
+         <testDataLinkId>963318cd-77f6-4a3a-94b3-4c167f29e714</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>kota</value>
          <variableId>53f81c1a-22a1-4a13-b3cd-edecce24f33c</variableId>
       </variableLink>
       <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
+         <testDataLinkId>963318cd-77f6-4a3a-94b3-4c167f29e714</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>alamat</value>
          <variableId>4ab17caa-6e68-48d4-88f8-6f1a2eff785f</variableId>
       </variableLink>
       <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
+         <testDataLinkId>963318cd-77f6-4a3a-94b3-4c167f29e714</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>status</value>
          <variableId>9339029e-9303-474b-9f70-0c1954f246d9</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>836e836b-df99-4e00-b661-e70ac735ac95</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Step Definition/Feature Register/REG05 - User register by emptying one of the fields</testCaseId>
+      <testDataLink>
+         <combinationType>ONE</combinationType>
+         <id>e9dd79a0-cb62-4fa7-983d-5d42089fa9ae</id>
+         <iterationEntity>
+            <iterationType>ALL</iterationType>
+            <value></value>
+         </iterationEntity>
+         <testDataId>Data Files/register-emptyfields</testDataId>
+      </testDataLink>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId>e9dd79a0-cb62-4fa7-983d-5d42089fa9ae</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>nama</value>
+         <variableId>d05be631-9259-4f24-b1fd-dcac5852e858</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>e9dd79a0-cb62-4fa7-983d-5d42089fa9ae</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>email</value>
+         <variableId>aa393385-9ec8-4480-a2f5-f598eff004fa</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>e9dd79a0-cb62-4fa7-983d-5d42089fa9ae</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>password</value>
+         <variableId>0d89065e-3f9e-4062-8f47-fb28c116daca</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>e9dd79a0-cb62-4fa7-983d-5d42089fa9ae</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>nomor_hp</value>
+         <variableId>2e2c5534-4474-4db9-93de-28901885c5f5</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>e9dd79a0-cb62-4fa7-983d-5d42089fa9ae</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>kota</value>
+         <variableId>aeb02a63-dbaf-40d4-8f9c-450b7a1c4f71</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>e9dd79a0-cb62-4fa7-983d-5d42089fa9ae</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>alamat</value>
+         <variableId>0d24ac36-c322-4fdf-a09a-01fa53a51d84</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>e9dd79a0-cb62-4fa7-983d-5d42089fa9ae</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>status</value>
+         <variableId>dcb9ec5e-44d2-4ad2-adb8-c16388c42ded</variableId>
       </variableLink>
    </testCaseLink>
 </TestSuiteEntity>

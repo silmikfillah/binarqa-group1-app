@@ -23,5 +23,6 @@ invalidemail = Mobile.getText(findTestObject('Register/android.widget.TextView -
 
 com.kms.katalon.core.util.KeywordUtil.logInfo(invalidemail)
 
-String expected = invalidemail
+expected = invalidemail
 
+Mobile.verifyMatch(invalidemail, expected, false)

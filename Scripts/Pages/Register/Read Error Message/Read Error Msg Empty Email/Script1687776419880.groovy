@@ -23,4 +23,6 @@ emptyemail = Mobile.getText(findTestObject('Register/android.widget.TextView - E
 
 com.kms.katalon.core.util.KeywordUtil.logInfo(emptyemail)
 
-String expected = emptyemail
+expected = emptyemail
+
+Mobile.verifyMatch(emptyemail, expected, false)

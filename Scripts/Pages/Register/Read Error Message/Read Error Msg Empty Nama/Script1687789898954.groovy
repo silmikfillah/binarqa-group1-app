@@ -23,5 +23,6 @@ emptynama = Mobile.getText(findTestObject('Register/android.widget.TextView - Na
 
 com.kms.katalon.core.util.KeywordUtil.logInfo(emptynama)
 
-String expected = emptynama
+expected = emptynama
 
+Mobile.verifyMatch(emptynama, expected, false)

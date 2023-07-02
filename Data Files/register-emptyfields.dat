@@ -1,14 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <DataFileEntity>
-   <description>invalid password (empty &amp; less than 6)</description>
-   <name>register-invalidpass</name>
+   <description>empty Nama/Kota/Alamat/Password/Email/Nomor Hp</description>
+   <name>register-emptyfields</name>
    <tag></tag>
    <containsHeaders>true</containsHeaders>
    <csvSeperator></csvSeperator>
-   <dataFileGUID>5f17fee5-f480-4973-a227-daf851382f50</dataFileGUID>
-   <dataSourceUrl>Data Files/register-invalidpass-app.xlsx</dataSourceUrl>
+   <dataFileGUID>524d26e3-1b2d-4097-8ed5-fbea755b64fa</dataFileGUID>
+   <dataSourceUrl>Data Files/register-emptyfields-app.xlsx</dataSourceUrl>
    <driver>ExcelFile</driver>
    <isInternalPath>true</isInternalPath>
+   <properties>
+      <entry>
+         <key>readAsString</key>
+         <value>true</value>
+      </entry>
+   </properties>
    <query></query>
    <secureUserAccount>false</secureUserAccount>
    <sheetName>Sheet1</sheetName>

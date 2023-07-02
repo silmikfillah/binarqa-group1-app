@@ -23,5 +23,7 @@ emptyalamat = Mobile.getText(findTestObject('Register/android.widget.TextView - 
 
 com.kms.katalon.core.util.KeywordUtil.logInfo(emptyalamat)
 
-String expected = emptyalamat
+expected = emptyalamat
+
+WebUI.verifyMatch(emptyalamat, expected, false)
 

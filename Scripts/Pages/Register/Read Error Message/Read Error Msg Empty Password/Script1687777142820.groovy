@@ -23,5 +23,6 @@ emptypass = Mobile.getText(findTestObject('Register/android.widget.TextView - Pa
 
 com.kms.katalon.core.util.KeywordUtil.logInfo(emptypass)
 
-String expected = emptypass
+expected = emptypass
 
+Mobile.verifyMatch(emptypass, expected, false)

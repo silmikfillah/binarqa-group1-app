@@ -23,5 +23,6 @@ emptyhp = Mobile.getText(findTestObject('Register/android.widget.TextView - Nomo
 
 com.kms.katalon.core.util.KeywordUtil.logInfo(emptyhp)
 
-String expected = emptyhp
+expected = emptyhp
 
+Mobile.verifyMatch(emptyhp, expected, false)

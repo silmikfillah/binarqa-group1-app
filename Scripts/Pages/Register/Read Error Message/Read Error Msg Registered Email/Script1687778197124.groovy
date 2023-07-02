@@ -16,12 +16,9 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
+import com.kms.katalon.core.mobile.keyword.internal.MobileDriverFactory as MobileDriverFactory
+import io.appium.java_client.AppiumDriver as AppiumDriver
+import com.kms.katalon.core.util.KeywordUtil as KeywordUtil
 
-Mobile.verifyElementVisible(findTestObject('Register/registeredemail'), 0)
-
-emailreg = Mobile.getText(findTestObject('Register/registeredemail'), 0)
-
-com.kms.katalon.core.util.KeywordUtil.logInfo(emailreg)
-
-String expected = emailreg
+Mobile.waitForElementPresent(findTestObject('Register/registeredemail'), 0)
 

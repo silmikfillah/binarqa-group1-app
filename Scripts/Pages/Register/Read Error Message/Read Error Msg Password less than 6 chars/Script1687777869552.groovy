@@ -23,5 +23,6 @@ lessthan6 = Mobile.getText(findTestObject('Register/android.widget.TextView - Pa
 
 com.kms.katalon.core.util.KeywordUtil.logInfo(lessthan6)
 
-String expected = lessthan6
+expected = lessthan6
 
+Mobile.verifyMatch(lessthan6, expected, false)

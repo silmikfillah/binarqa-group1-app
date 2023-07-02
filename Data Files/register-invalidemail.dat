@@ -6,9 +6,9 @@
    <containsHeaders>true</containsHeaders>
    <csvSeperator></csvSeperator>
    <dataFileGUID>819c4c27-3dca-443b-84aa-5f7ebd54222e</dataFileGUID>
-   <dataSourceUrl>C:\Users\silmi\Downloads\register-invalidemail-app.xlsx</dataSourceUrl>
+   <dataSourceUrl>Data Files/register-invalidemail-app.xlsx</dataSourceUrl>
    <driver>ExcelFile</driver>
-   <isInternalPath>false</isInternalPath>
+   <isInternalPath>true</isInternalPath>
    <query></query>
    <secureUserAccount>false</secureUserAccount>
    <sheetName>Sheet1</sheetName>
