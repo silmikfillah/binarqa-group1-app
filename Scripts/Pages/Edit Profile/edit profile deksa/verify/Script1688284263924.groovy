@@ -17,5 +17,6 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-Mobile.tap(findTestObject('Edit_profile1/android.widget.Button - Simpan1'), 0)
+Mobile.verifyElementNotVisible(findTestObject('edit profile deksa/android.widget.TextView - Tangerang Selatan(tap kota)'), 
+    0)
 

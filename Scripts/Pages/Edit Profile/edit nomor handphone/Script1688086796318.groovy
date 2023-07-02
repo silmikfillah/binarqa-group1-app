@@ -17,8 +17,7 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-Mobile.tap(findTestObject('Edit_profile1/android.widget.TextView - 081287844972(tap nomor handphone)'), 0)
+Mobile.tap(findTestObject('Edit_profile1/android.widget.TextView - 081287844972_edit Telepon'), 0)
 
-Mobile.setText(findTestObject('Edit_profile1/android.widget.EditText - Tangerang Selatan(edit kota)'), 'ciputat timur', 
-    0)
+Mobile.setText(findTestObject('Edit_profile1/android.widget.TextView - 081287844972_edit Telepon'), '08324343', 30)
 
