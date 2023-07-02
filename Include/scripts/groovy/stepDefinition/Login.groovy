@@ -18,6 +18,7 @@ import com.kms.katalon.core.testobject.TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 
+import ch.qos.logback.core.joran.conditional.ElseAction
 import internal.GlobalVariable
 
 import org.openqa.selenium.WebElement
@@ -56,13 +57,24 @@ class Login {
 
 	@When("I input email with (.*)")
 	public void i_input_email(String email) {
-		Mobile.callTestCase(findTestCase('Pages/Login/Verify Content Login Page'), [:], FailureHandling.STOP_ON_FAILURE)
-		Mobile.callTestCase(findTestCase('Pages/Login/Input Email'), [('email') : email], FailureHandling.STOP_ON_FAILURE)
+		if (email == 'empty') {
+			Mobile.callTestCase(findTestCase('Pages/Login/Verify Content Login Page'), [:], FailureHandling.STOP_ON_FAILURE)
+			Mobile.callTestCase(findTestCase('Pages/Login/Input Email'), [('email') : ''], FailureHandling.STOP_ON_FAILURE)
+		}
+		else {
+			Mobile.callTestCase(findTestCase('Pages/Login/Verify Content Login Page'), [:], FailureHandling.STOP_ON_FAILURE)
+			Mobile.callTestCase(findTestCase('Pages/Login/Input Email'), [('email') : email], FailureHandling.STOP_ON_FAILURE)
+		}
 	}
 
 	@When("I input password with (.*)")
 	public void i_input_password(String password) {
-		Mobile.callTestCase(findTestCase('Pages/Login/Input Password'), [('password') : password], FailureHandling.STOP_ON_FAILURE)
+		if (password == 'empty') {
+			Mobile.callTestCase(findTestCase('Pages/Login/Input Password'), [('password') : ''], FailureHandling.STOP_ON_FAILURE)
+		}
+		else {
+			Mobile.callTestCase(findTestCase('Pages/Login/Input Password'), [('password') : password], FailureHandling.STOP_ON_FAILURE)
+		}
 	}
 
 	@When("I tap Masuk button")
@@ -84,6 +96,9 @@ class Login {
 		}
 		else if (status == 'empty email') {
 			Mobile.callTestCase(findTestCase('Pages/Login/Verify Invalid Empty Email'), [('status'):status], FailureHandling.STOP_ON_FAILURE)
+		}
+		else if (status == 'empty password') {
+			Mobile.callTestCase(findTestCase('Pages/Login/Verify Invalid Empty Password'), [('status'):status], FailureHandling.STOP_ON_FAILURE)
 		}
 		else if (status == 'invalid pass') {
 			Mobile.callTestCase(findTestCase('Pages/Login/Verify Invalid Password less than 6 chars'), [('status'):status], FailureHandling.STOP_ON_FAILURE)

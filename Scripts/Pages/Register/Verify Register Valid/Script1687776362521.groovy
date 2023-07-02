@@ -19,3 +19,9 @@ import org.openqa.selenium.Keys as Keys
 
 Mobile.verifyElementVisible(findTestObject('Akun/android.widget.ImageView - Profile Photo'), 0)
 
+Mobile.verifyElementVisible(findTestObject('Akun/android.widget.TextView - Email'), 0)
+
+Mobile.verifyElementVisible(findTestObject('Akun/android.widget.TextView - Nama'), 0)
+
+Mobile.verifyElementVisible(findTestObject('Akun/android.widget.TextView - Nomor HP'), 0)
+

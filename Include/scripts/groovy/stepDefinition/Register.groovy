@@ -52,45 +52,70 @@ class Register {
 		Mobile.callTestCase(findTestCase('Pages/Register/Tap Daftar from login page'), [:], FailureHandling.STOP_ON_FAILURE)
 	}
 
-	@When("I input nama for register (.*) and (.*)")
-	public void i_input_namareg_with(String nama, statusnama) {
-		if (statusnama == "random") {
+	@When("I input nama for register (.*)")
+	public void i_input_namareg_with(String nama) {
+		if (nama == 'random') {
 			Mobile.callTestCase(findTestCase('Pages/Register/Input Nama with custom keyword'), [('nama') : nama], FailureHandling.STOP_ON_FAILURE)
 		}
-		else if (statusnama == "testdata") {
+		else if (nama == 'empty') {
+			Mobile.callTestCase(findTestCase('Pages/Register/Input Nama with test data'), [('nama') : ''], FailureHandling.STOP_ON_FAILURE)
+		}
+		else {
 			Mobile.callTestCase(findTestCase('Pages/Register/Input Nama with test data'), [('nama') : nama], FailureHandling.STOP_ON_FAILURE)
 		}
 	}
 
-	@And("I input email for register (.*) and (.*)")
-	public void i_input_emailreg_with(String email, statusemail) {
-		if (statusemail == "random") {
+	@And("I input email for register (.*)")
+	public void i_input_emailreg_with(String email) {
+		if (email == 'random') {
 			Mobile.callTestCase(findTestCase('Pages/Register/Input Email with custom keyword'), [('email') : email], FailureHandling.STOP_ON_FAILURE)
 		}
-		else if (statusemail == "testdata") {
+		else if (email == 'empty') {
+			Mobile.callTestCase(findTestCase('Pages/Register/Input Email with test data'), [('email') : ''], FailureHandling.STOP_ON_FAILURE)
+		}
+		else {
 			Mobile.callTestCase(findTestCase('Pages/Register/Input Email with test data'), [('email') : email], FailureHandling.STOP_ON_FAILURE)
 		}
 	}
 
 	@And("I input password for register (.*)")
 	public void i_input_passwordreg_with(String password) {
-		Mobile.callTestCase(findTestCase('Pages/Register/Input Password'), [('password') : password], FailureHandling.STOP_ON_FAILURE)
+		if (password == 'empty') {
+			Mobile.callTestCase(findTestCase('Pages/Register/Input Password'), [('password') : ''], FailureHandling.STOP_ON_FAILURE)
+		} else {
+			Mobile.callTestCase(findTestCase('Pages/Register/Input Password'), [('password') : password], FailureHandling.STOP_ON_FAILURE)
+		}
 	}
 
 	@And("I input nomor hp with (.*)")
 	public void i_input_nomor_hp_with(String nomor_hp) {
-		Mobile.callTestCase(findTestCase('Pages/Register/Input Nomor Hp'), [('nomor_hp') : nomor_hp], FailureHandling.STOP_ON_FAILURE)
+		if (nomor_hp == 'empty') {
+			Mobile.callTestCase(findTestCase('Pages/Register/Input Nomor Hp'), [('nomor_hp') : ''], FailureHandling.STOP_ON_FAILURE)
+		}
+		else {
+			Mobile.callTestCase(findTestCase('Pages/Register/Input Nomor Hp'), [('nomor_hp') : nomor_hp], FailureHandling.STOP_ON_FAILURE)
+		}
 	}
 
 	@And("I input kota with (.*)")
 	public void i_input_kota_with(String kota) {
-		Mobile.callTestCase(findTestCase('Pages/Register/Input Kota'), [('kota') : kota], FailureHandling.STOP_ON_FAILURE)
+		if (kota == 'empty') {
+			Mobile.callTestCase(findTestCase('Pages/Register/Input Kota'), [('kota') : ''], FailureHandling.STOP_ON_FAILURE)
+		}
+		else {
+			Mobile.callTestCase(findTestCase('Pages/Register/Input Kota'), [('kota') : kota], FailureHandling.STOP_ON_FAILURE)
+		}
 	}
 
 	@And("I input alamat with (.*)")
 	public void i_input_alamat_with(String alamat) {
-		Mobile.callTestCase(findTestCase('Pages/Register/Scroll to Text Sudah Punya Akun'), [:], FailureHandling.STOP_ON_FAILURE)
-		Mobile.callTestCase(findTestCase('Pages/Register/Input Alamat'), [('alamat') : alamat], FailureHandling.STOP_ON_FAILURE)
+		if (alamat == 'empty') {
+			Mobile.callTestCase(findTestCase('Pages/Register/Scroll to Text Sudah Punya Akun'), [:], FailureHandling.STOP_ON_FAILURE)
+			Mobile.callTestCase(findTestCase('Pages/Register/Input Alamat'), [('alamat') : ''], FailureHandling.STOP_ON_FAILURE)
+		} else {
+			Mobile.callTestCase(findTestCase('Pages/Register/Scroll to Text Sudah Punya Akun'), [:], FailureHandling.STOP_ON_FAILURE)
+			Mobile.callTestCase(findTestCase('Pages/Register/Input Alamat'), [('alamat') : alamat], FailureHandling.STOP_ON_FAILURE)
+		}
 	}
 
 	@And("I click Register button")

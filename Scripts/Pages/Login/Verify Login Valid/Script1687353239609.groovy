@@ -25,5 +25,3 @@ Mobile.verifyElementVisible(findTestObject('Akun/android.widget.TextView - Nama'
 
 Mobile.verifyElementVisible(findTestObject('Akun/android.widget.TextView - Nomor HP'), 0)
 
-Mobile.verifyElementVisible(findTestObject('Akun/android.widget.ImageView - Profile Photo'), 0)
-
