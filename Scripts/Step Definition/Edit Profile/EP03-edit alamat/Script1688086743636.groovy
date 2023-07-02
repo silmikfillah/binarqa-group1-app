@@ -33,3 +33,8 @@ WebUI.callTestCase(findTestCase('Pages/Edit Profile/edit alamat'), [:], FailureH
 
 WebUI.callTestCase(findTestCase('Pages/Edit Profile/Button simpan'), [:], FailureHandling.STOP_ON_FAILURE)
 
+
+WebUI.callTestCase(findTestCase('Pages/Edit Profile/edit profile deksa/verify'), [:], FailureHandling.STOP_ON_FAILURE)
+
+
+

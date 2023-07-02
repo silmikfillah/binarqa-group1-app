@@ -44,22 +44,34 @@ import cucumber.api.java.en.When
 
 
 
-class edit_profile {
-	/**
-	 * The step definitions below match with Katalon sample Gherkin steps
-	 */
-	@Given("I want to write a step with (.*)")
-	def I_want_to_write_a_step_with_name(String name) {
-		println name
+class editkota {
+	@Given("User login akun")
+	public void user_login_akun() {
+		WebUI.callTestCase(findTestCase('Pages/Navbar/Tap Akun'), [:], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.callTestCase(findTestCase('Pages/Edit Profile/Button-masuk'), [:], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.callTestCase(findTestCase('Pages/Edit Profile/Input_email'), [:], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.callTestCase(findTestCase('Pages/Edit Profile/Input_password'), [:], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.callTestCase(findTestCase('Pages/Edit Profile/Button-masuk2'), [:], FailureHandling.STOP_ON_FAILURE)
 	}
 
-	@When("I check for the (\\d+) in step")
-	def I_check_for_the_value_in_step(int value) {
-		println value
+	@When("User tap akun login")
+	public void user_tap_akun_login() {
+		WebUI.callTestCase(findTestCase('Pages/Edit Profile/Click_gambar_edit'), [:], FailureHandling.STOP_ON_FAILURE)
 	}
 
-	@Then("I verify the (.*) in step")
-	def I_verify_the_status_in_step(String status) {
-		println status
+	@When("User input kota jakarta")
+	public void user_input_kota_jakarta() {
+		WebUI.callTestCase(findTestCase('Pages/Edit Profile/edit kota'), [:], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.callTestCase(findTestCase('Pages/Edit Profile/Button simpan'), [:], FailureHandling.STOP_ON_FAILURE
+	}
+
+	@Then("User verify success ok")
+	public void user_verify_success_ok() {
+		WebUI.callTestCase(findTestCase('Pages/Edit Profile/edit profile deksa/verify'), [:], FailureHandling.STOP_ON_FAILURE)
 	}
 }

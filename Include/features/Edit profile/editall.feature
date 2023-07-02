@@ -1,15 +1,12 @@
+@EditProfile
+Feature: editprofile valid data
 
-@tag
-Feature: Title of your feature
-  I want to use this template for my feature file
-
-  @tag1
-  Scenario Outline: Title of your scenario outline
-    Given I want to write a step with <name>
-    When I check for the <value> in step
-    Then I verify the <status> in step
-
-    Examples: 
-      | name  | value | status  |
-      | name1 |     5 | success |
-      | name2 |     7 | Fail    |
+  @EPD01
+  Scenario: Edit profile with Valid Data
+    Given User login
+    When User tap akun
+    And User input nama
+    And User input nomor handphone
+    And User input kota
+    And User input alamat
+    Then User verify success
