@@ -48,33 +48,30 @@ class editnomorhp {
 	@Given("User login homapage")
 	public void user_login_homapage() {
 		WebUI.callTestCase(findTestCase('Pages/Navbar/Tap Akun'), [:], FailureHandling.STOP_ON_FAILURE)
-		
+
 		WebUI.callTestCase(findTestCase('Pages/Edit Profile/Button-masuk'), [:], FailureHandling.STOP_ON_FAILURE)
-		
+
 		WebUI.callTestCase(findTestCase('Pages/Edit Profile/Input_email'), [:], FailureHandling.STOP_ON_FAILURE)
-		
+
 		WebUI.callTestCase(findTestCase('Pages/Edit Profile/Input_password'), [:], FailureHandling.STOP_ON_FAILURE)
-		
+
 		WebUI.callTestCase(findTestCase('Pages/Edit Profile/Button-masuk2'), [:], FailureHandling.STOP_ON_FAILURE)
 	}
 
 	@When("User tap akun porifle")
 	public void user_tap_akun_porifle() {
 		WebUI.callTestCase(findTestCase('Pages/Edit Profile/Click_gambar_edit'), [:], FailureHandling.STOP_ON_FAILURE)
-		
 	}
 
 	@When("User input nomor handphone user")
 	public void user_input_nomor_handphone_user() {
 		WebUI.callTestCase(findTestCase('Pages/Edit Profile/edit nomor handphone'), [:], FailureHandling.STOP_ON_FAILURE)
-		
+
 		WebUI.callTestCase(findTestCase('Pages/Edit Profile/Button simpan'), [:], FailureHandling.STOP_ON_FAILURE)
-		
 	}
 
 	@Then("User verify success massages update profile")
 	public void user_verify_success_massages_update_profile() {
 		WebUI.callTestCase(findTestCase('Pages/Edit Profile/edit profile deksa/verify'), [:], FailureHandling.STOP_ON_FAILURE)
-		
 	}
 }
