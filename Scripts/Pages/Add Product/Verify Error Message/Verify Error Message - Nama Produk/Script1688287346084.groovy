@@ -19,4 +19,7 @@ import org.openqa.selenium.Keys as Keys
 
 Mobile.verifyElementVisible(findTestObject('Add Product/android.widget.TextView - Text Error Empty Input'), 0)
 
-Mobile.verifyMatch(Mobile.getText(findTestObject('Add Product/android.widget.TextView - Text Error Empty Input'), 0), 'Harga tidak boleh kosong', false)
+WebUI.verifyMatch(Mobile.getText(findTestObject('Add Product/android.widget.TextView - Text Error Empty Input'), 0), 'Nama produk tidak boleh kosong', false)
+
+
+

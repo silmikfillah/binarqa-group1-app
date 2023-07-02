@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestSuiteEntity>
    <description></description>
-   <name>Add Product</name>
+   <name>Feature Add Product - Negative Case</name>
    <tag></tag>
    <isRerun>false</isRerun>
    <mailRecipient></mailRecipient>
@@ -10,58 +10,51 @@
    <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
    <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
    <rerunImmediately>false</rerunImmediately>
-   <testSuiteGuid>aa529741-f182-4ec4-99da-f19ab936d66b</testSuiteGuid>
+   <testSuiteGuid>006ce615-6756-4365-909a-a7ecd91187f3</testSuiteGuid>
    <testCaseLink>
-      <guid>6c70f60b-fbec-464c-8f7f-423b40016caf</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Step Definition/Feature Add Product/ADDP01 - Add Product With Valid Data</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>c8fa2bbb-273d-4e62-b7c5-b27b5b295fce</guid>
+      <guid>8ec66086-eb6a-4bb6-aa66-59a9d1d19fb8</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Step Definition/Feature Add Product/ADDP02 - Add Product Without Input Nama Produk</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>8f8f1f75-de23-4f72-b8af-20498d9d8822</guid>
+      <guid>3c2de046-8921-4ab7-921c-b82099ee1d3f</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Step Definition/Feature Add Product/ADDP03 - Add Product Without Input Harga Produk</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>66b0e988-6c01-4eff-bec4-77b8d680ed35</guid>
+      <guid>f0a1e2ec-089e-44ce-985b-ce62074e9325</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Step Definition/Feature Add Product/ADDP04 - Add Product Without Input Kategori Produk</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>713d4b01-db17-49d5-a54b-a21f563af11e</guid>
+      <guid>472abd63-d9f0-466b-9158-e62792804c5b</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Step Definition/Feature Add Product/ADDP05 - Add Product Without Input Lokasi Produk</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>d31966e9-e0a4-49e2-bd03-c45f6eeec6ea</guid>
+      <guid>a11b0c95-26d1-44d3-8bbf-361f487b3aa9</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Step Definition/Feature Add Product/ADDP06 - Add Product Without Input Deskripsi Produk</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>3543b6a4-23b2-4422-ab1b-b302ac7bb615</guid>
+      <guid>0d27060f-5f32-453a-812f-54eef4718bf0</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Step Definition/Feature Add Product/ADDP07 - Add Product Without Input Foto Produk</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>49524ed6-9935-4b5c-b6e3-9e1a2e8974a0</guid>
+      <guid>0c944353-c8cd-40fa-a5fe-90ea02bb3769</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Step Definition/Feature Add Product/ADDP08 - Add Product When Not Logged In</testCaseId>

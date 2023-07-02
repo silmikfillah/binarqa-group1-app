@@ -17,5 +17,8 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-Mobile.verifyElementVisible(findTestObject('Add Product/toastMessage - Foto Produk Empty'), 0)
+Mobile.verifyElementVisible(findTestObject('Add Product/android.widget.TextView - Text Error Empty Input'), 0)
+
+WebUI.verifyMatch(Mobile.getText(findTestObject('Add Product/android.widget.TextView - Text Error Empty Input'), 0), 'Lokasi tidak boleh kosong', 
+    false)
 
