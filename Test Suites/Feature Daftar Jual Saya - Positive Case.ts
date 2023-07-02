@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestSuiteEntity>
    <description></description>
-   <name>edit profile</name>
+   <name>Feature Daftar Jual Saya - Positive Case</name>
    <tag></tag>
    <isRerun>false</isRerun>
    <mailRecipient></mailRecipient>
@@ -10,33 +10,26 @@
    <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
    <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
    <rerunImmediately>false</rerunImmediately>
-   <testSuiteGuid>80821a07-faa6-40ae-87dd-5aa6abc63c9b</testSuiteGuid>
+   <testSuiteGuid>47dacdb2-2593-499e-bab5-469e251f10fb</testSuiteGuid>
    <testCaseLink>
-      <guid>df39662d-53ed-49ca-aed5-dec11cb415f1</guid>
+      <guid>5ec34831-80b2-4b05-a90a-bc5569bd2af9</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Step Definition/Edit Profile/EP01_edit_nama</testCaseId>
+      <testCaseId>Test Cases/Step Definition/Feature Daftar Jual Saya/DJS01 - See Daftar Jual Saya Product List</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>1ff6b538-47c9-4d05-a0ac-ad50e33fafb6</guid>
+      <guid>b0e963ed-b6db-46f1-af03-285ef22d2844</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Step Definition/Edit Profile/EP02-edit no handphone</testCaseId>
+      <testCaseId>Test Cases/Step Definition/Feature Daftar Jual Saya/DJS03 - See Diminati List</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>8014c6d5-f76a-47bf-a0f8-ef93ab97d574</guid>
+      <guid>8de5aeb9-ab6e-4711-8cd6-c8ee78a3d660</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Step Definition/Edit Profile/EP03-edit alamat</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>cf4023e7-2d11-4424-9f65-e41a39f91283</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Step Definition/Edit Profile/EP04-edit kota</testCaseId>
+      <testCaseId>Test Cases/Step Definition/Feature Daftar Jual Saya/DJS05 - See Terjual List</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
 </TestSuiteEntity>

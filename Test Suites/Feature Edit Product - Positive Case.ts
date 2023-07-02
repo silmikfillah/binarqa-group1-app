@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestSuiteEntity>
    <description></description>
-   <name>edit profile 1</name>
+   <name>Feature Edit Product - Positive Case</name>
    <tag></tag>
    <isRerun>false</isRerun>
    <mailRecipient></mailRecipient>
@@ -10,12 +10,12 @@
    <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
    <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
    <rerunImmediately>false</rerunImmediately>
-   <testSuiteGuid>0946f284-3117-45f3-8648-778c8dadbc4b</testSuiteGuid>
+   <testSuiteGuid>cb02201f-a098-46c0-bcff-2b3632edf9ba</testSuiteGuid>
    <testCaseLink>
-      <guid>66b5c0d5-212a-46f8-9ca3-d540d5bf2210</guid>
+      <guid>de9d173f-8c08-444b-8559-c10336a54e0f</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Step Definition/Edit Profile/EP06-Edit all</testCaseId>
+      <testCaseId>Test Cases/Step Definition/Feature Edit Product/EPD01 - Edit Product with Valid Data</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
 </TestSuiteEntity>

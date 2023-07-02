@@ -17,7 +17,7 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-Mobile.tap(findTestObject('edit profile deksa1/android.view.ViewGroup(tap nama)'), 30)
+Mobile.tap(findTestObject('Edit Profile/edit profile deksa1/android.view.ViewGroup(tap nama)'), 30)
 
-Mobile.setText(findTestObject('edit profile deksa1/android.widget.EditText - deksa(edit nama)'), 'deksa', 30)
+Mobile.setText(findTestObject('Edit Profile/edit profile deksa1/android.widget.EditText - deksa(edit nama)'), 'deksa', 30)
 

@@ -17,9 +17,9 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-Mobile.tap(findTestObject('edit profile deksa1/android.widget.TextView - jl meditran v m27 no 12 rtrw 0708 komplek pertamina(tap alamat)'), 
+Mobile.tap(findTestObject('Edit Profile/edit profile deksa1/android.widget.TextView - jl meditran v m27 no 12 rtrw 0708 komplek pertamina(tap alamat)'), 
     0)
 
-Mobile.setText(findTestObject('edit profile deksa1/android.widget.EditText - jl meditran v m27 no 12 rtrw 0708 komplek pertamina(edit alamat1)'), 
+Mobile.setText(findTestObject('Edit Profile/edit profile deksa1/android.widget.EditText - jl meditran v m27 no 12 rtrw 0708 komplek pertamina(edit alamat1)'), 
     'jl mangga 1', 0)
 

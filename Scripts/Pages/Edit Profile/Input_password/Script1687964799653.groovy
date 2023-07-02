@@ -17,5 +17,5 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-Mobile.setText(findTestObject('Edit_profile1/Input_password_masuk'), 'meditran5', 0)
+Mobile.setText(findTestObject('Edit Profile/Edit_profile1/Input_password_masuk'), 'meditran5', 0)
 

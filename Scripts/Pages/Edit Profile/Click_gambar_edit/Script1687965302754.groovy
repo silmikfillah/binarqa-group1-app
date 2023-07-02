@@ -17,5 +17,5 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-Mobile.tap(findTestObject('Edit_profile1/android.widget.ImageView_edit_profile (1)'), 0)
+Mobile.tap(findTestObject('Edit Profile/Edit_profile1/android.widget.ImageView_edit_profile (1)'), 0)
 

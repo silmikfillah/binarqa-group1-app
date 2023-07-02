@@ -17,5 +17,5 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-Mobile.checkElement(findTestObject('Edit_profile1/button-masuk 2'), 0)
+Mobile.checkElement(findTestObject('Edit Profile/Edit_profile1/button-masuk 2'), 0)
 

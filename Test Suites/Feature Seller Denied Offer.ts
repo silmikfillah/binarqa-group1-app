@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestSuiteEntity>
    <description></description>
-   <name>Feature Update Status to Batalkan Transaksi</name>
+   <name>Feature Seller Denied Offer</name>
    <tag></tag>
    <isRerun>false</isRerun>
    <mailRecipient></mailRecipient>
@@ -10,19 +10,19 @@
    <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
    <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
    <rerunImmediately>true</rerunImmediately>
-   <testSuiteGuid>da6a11e2-e09f-48ad-a4ff-7ab4ace9fe11</testSuiteGuid>
+   <testSuiteGuid>53c0ef70-f2b0-4373-bbc1-95208fc6abae</testSuiteGuid>
    <testCaseLink>
-      <guid>0593e73b-2355-4233-a98c-f5db0431295d</guid>
+      <guid>1bf7725a-7e88-44ca-a3d0-e1ab416f6ae5</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Step Definition/Feature Bid/BID02 - Bid Invalid</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>11b3b865-066a-41a1-a83b-4fb2b2ed807d</guid>
+      <guid>6b53fcc3-3068-4115-ad39-4fe383459770</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Step Definition/Feature Bid/UPD02 - Seller Update Status to Batalkan Transaksi</testCaseId>
+      <testCaseId>Test Cases/Step Definition/Feature Bid/DND01 - Denied Buyer Offer</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
 </TestSuiteEntity>

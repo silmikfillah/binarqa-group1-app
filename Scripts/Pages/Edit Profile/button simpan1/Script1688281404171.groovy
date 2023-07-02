@@ -17,5 +17,5 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-Mobile.tap(findTestObject('Edit_profile1/android.widget.Button - Simpan_button_simpan_nama'), 30)
+Mobile.tap(findTestObject('Edit Profile/Edit_profile1/android.widget.Button - Simpan_button_simpan_nama'), 30)
 
