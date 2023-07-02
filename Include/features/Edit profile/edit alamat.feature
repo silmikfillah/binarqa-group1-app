@@ -4,7 +4,7 @@ Feature: edit feature profile
   I want to use edit profile
 
   @ea1
-  Scenario Outline: i want edit nama
+  Scenario Outline: i want edit alamat
     Given I am direct homapage
     When I check for 
     Then I verify the <status> in step

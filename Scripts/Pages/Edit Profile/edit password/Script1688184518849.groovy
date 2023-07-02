@@ -17,3 +17,10 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+Mobile.setText(findTestObject('Edit_profile1/android.widget.EditText - Kata Sandi Lama(edit lama)'), 'mediran5', 0)
+
+Mobile.setText(findTestObject('Edit_profile1/android.widget.EditText - Kata Sandi Baru(edit pw baru)'), 'meditran5', 0)
+
+Mobile.setText(findTestObject('Edit_profile1/android.widget.EditText - Konfirmasi Kata Sandi(edit konfimasi pw)'), 'meditran5', 
+    0)
+
