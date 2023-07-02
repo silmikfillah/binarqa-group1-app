@@ -16,6 +16,6 @@
       <description></description>
       <id>9efe5226-ad8f-4139-8afb-8fee2d29b226</id>
       <masked>false</masked>
-      <name>variable</name>
+      <name>expected</name>
    </variable>
 </TestCaseEntity>

@@ -20,15 +20,4 @@ import com.kms.katalon.core.mobile.keyword.internal.MobileDriverFactory as Mobil
 import io.appium.java_client.AppiumDriver as AppiumDriver
 import com.kms.katalon.core.util.KeywordUtil as KeywordUtil
 
-//AppiumDriver<?> driver = MobileDriverFactory.getDriver()
-//
-//def toast = driver.findElementByXPath('//android.widget.Toast[@text=\'Email atau kata sandi salah\']')
-//
-//println('Toast element: ' + toast)
-//
-//if (toast == null) {
-//    KeywordUtil.markFailed('ERROR: Toast object not found!')
-//}
-
-Mobile.waitForElementPresent(findTestObject('Login/emailpassinvalid'), 0)
-
+Mobile.waitForElementPresent(findTestObject('Login/emailpassinvalid'), 0, FailureHandling.STOP_ON_FAILURE)

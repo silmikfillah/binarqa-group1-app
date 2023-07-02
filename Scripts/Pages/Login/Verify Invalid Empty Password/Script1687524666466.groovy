@@ -19,3 +19,11 @@ import org.openqa.selenium.Keys as Keys
 
 Mobile.verifyElementVisible(findTestObject('Login/android.widget.TextView - Password tidak boleh kosong'), 0)
 
+error_msg = Mobile.getText(findTestObject('Login/android.widget.TextView - Password tidak boleh kosong'), 0)
+
+com.kms.katalon.core.util.KeywordUtil.logInfo(error_msg)
+
+String expected = error_msg
+
+Mobile.verifyMatch(error_msg, expected, false)
+
