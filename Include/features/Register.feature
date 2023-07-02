@@ -19,7 +19,7 @@ Feature: Android User Register
       | random | random | abc!12345 | 088811223344 | Sby  | Jln. Raya 1 | success |
 
   @REG02 @Negative
-  Scenario Outline: Verify to register using invalid email
+  Scenario Outline: Verify to register using invalid email: <condition>
     Given I already installed the app and on the register page
     When I input nama for register <nama>
     And I input email for register <email>
@@ -31,12 +31,12 @@ Feature: Android User Register
     Then I should see the next step: <status> for register
 
     Examples: 
-      | nama         | email               | password  | nomor_hp     | kota | alamat      | status      |
-      | registered   | groupsatu@gmail.com | abc!12345 | 088811223344 | Sby  | Jln. Raya 1 | registered  |
-      | without @    | groupsatuyahoo.id   | abc!12345 | 088811223344 | Sby  | Jln. Raya 1 | invalid email    |
-      | without TLD  | groupsatu@mail      | abc!12345 | 088811223344 | Sby  | Jln. Raya 1 | invalid email    |
-      | empty email  | empty               | abc!12345 | 088811223344 | Sby  | Jln. Raya 3 | empty email |
-      | without name | @rocketmail.com     | abc!12345 | 088811223344 | Sby  | Jln. Raya 3 | invalid email     |
+      | nama       | email               | password  | nomor_hp     | kota | alamat      | status        | condition          |
+      | Group Satu | groupsatu@gmail.com | abc!12345 | 088811223344 | Sby  | Jln. Raya 1 | registered    | already registered |
+      | John Doe   | groupsatuyahoo.id   | abc!12345 | 088811223344 | Sby  | Jln. Raya 1 | invalid email | without @          |
+      | Alan Kruss | groupsatu@mail      | abc!12345 | 088811223344 | Sby  | Jln. Raya 1 | invalid email | non-TLD            |
+      | Charlotte  | empty               | abc!12345 | 088811223344 | Sby  | Jln. Raya 3 | empty email   | empty email        |
+      | Mia Clark  | @rocketmail.com     | abc!12345 | 088811223344 | Sby  | Jln. Raya 3 | invalid email | without email name |
 
   @REG03 @Negative
   Scenario Outline: Verify to register without enter any data
@@ -55,7 +55,7 @@ Feature: Android User Register
       | empty | empty | empty    | empty    | empty | empty  | empty nama |
 
   @REG04 @Negative
-  Scenario Outline: Verify to register with invalid password
+  Scenario Outline: Verify to register with invalid password: <condition>
     Given I already installed the app and on the register page
     When I input nama for register <nama>
     And I input email for register <email>
@@ -67,12 +67,12 @@ Feature: Android User Register
     Then I should see the next step: <status> for register
 
     Examples: 
-      | nama          | email                | password | nomor_hp     | kota | alamat      | status         |
-      | less than six | kurangdari6@mail.com | 45a!     | 088811223344 | Sby  | Jln. Raya 1 | invalid pass   |
-      | empty pass    | emptypass@test.com   | empty    | 088811223344 | Sby  | Jln. Raya 3 | empty password |
+      | nama       | email                | password | nomor_hp     | kota     | alamat      | status         | condition              |
+      | Group Satu | kurangdari6@mail.com | 45a!     | 088811223344 | Surabaya | Jln. Raya 1 | invalid pass   | less than 6 characters |
+      | Group Dua  | emptypass@test.com   | empty    | 088811223344 | Malang   | Jln. Raya 3 | empty password | empty password         |
 
   @REG05 @Negative
-  Scenario Outline: Verify to register by emptying one of the fields
+  Scenario Outline: Verify to register by leaving one field empty: <status>
     Given I already installed the app and on the register page
     When I input nama for register <nama>
     And I input email for register <email>

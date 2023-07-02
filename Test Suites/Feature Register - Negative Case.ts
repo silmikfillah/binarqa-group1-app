@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestSuiteEntity>
    <description></description>
-   <name>Feature Register</name>
+   <name>Feature Register - Negative Case</name>
    <tag></tag>
    <isRerun>false</isRerun>
    <mailRecipient></mailRecipient>
@@ -11,13 +11,6 @@
    <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
    <rerunImmediately>false</rerunImmediately>
    <testSuiteGuid>a5ff43d3-a7da-458f-999b-b38b8d353d46</testSuiteGuid>
-   <testCaseLink>
-      <guid>b6c2c1c1-e4c5-44cf-8fcc-a34aa40aec73</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Step Definition/Feature Register/REG01 - User register with valid credentials</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
    <testCaseLink>
       <guid>e09f70a0-a732-4f48-8fb0-8a4dee3fb92b</guid>
       <isReuseDriver>false</isReuseDriver>
