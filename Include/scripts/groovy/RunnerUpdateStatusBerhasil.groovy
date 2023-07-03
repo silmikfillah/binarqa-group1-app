@@ -23,12 +23,12 @@ import org.junit.runner.RunWith
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-features = "Include/features/Register.feature",
+features = "Include/features/Update Status to Berhasil Terjual.feature",
 glue = "stepDefinition",
 tags = "",
 monochrome = true,
-plugin = "html:Reports/Cucumber/Register"
+plugin = "html:Reports/Cucumber/Update Status to Berhasil Terjual"
 )
 
-public class RunnerRegister {
+public class RunnerUpdateStatusBerhasil {
 }

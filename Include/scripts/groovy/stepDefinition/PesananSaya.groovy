@@ -28,45 +28,61 @@ public class PesananSaya {
 	@And('User already logged in and have order')
 	public void user_login_have_order() {
 		try {
-			WebUI.callTestCase(findTestCase('Pages/Homepage/Verify Already Logged In'), [:], FailureHandling.STOP_ON_FAILURE)
+			Mobile.callTestCase(findTestCase('Pages/Homepage/Verify Already Logged In'), [:], FailureHandling.STOP_ON_FAILURE)
 			try {
-				WebUI.callTestCase(findTestCase('Pages/Pesanan Saya/Verify Account Have Order'), [:], FailureHandling.STOP_ON_FAILURE)
+				Mobile.callTestCase(findTestCase('Pages/Pesanan Saya/Verify Account Have Order'), [:], FailureHandling.STOP_ON_FAILURE)
 			} catch (Exception e) {
 				WebUI.callTestCase(findTestCase('Step Definition/Feature Logout/LGT01 - Logout'), [:], FailureHandling.STOP_ON_FAILURE)
-				WebUI.callTestCase(findTestCase('Step Definition/Feature Login/LGN01 - User login with valid credentials'), [('email'):'peter.rg@gmail.com', ('password'):'a1b2c3d4'])
+				Mobile.callTestCase(findTestCase('Pages/Navbar/Tap Akun'), [:], FailureHandling.STOP_ON_FAILURE)
+				Mobile.callTestCase(findTestCase('Pages/Akun/Tap Masuk from Akun Page'), [:], FailureHandling.STOP_ON_FAILURE)
+				Mobile.callTestCase(findTestCase('Pages/Login/Input Email'), [('email') : 'peter.rg@gmail.com'], FailureHandling.STOP_ON_FAILURE)
+				Mobile.callTestCase(findTestCase('Pages/Login/Input Password'), [('password') : 'a1b2c3d4'], FailureHandling.STOP_ON_FAILURE)
+				Mobile.callTestCase(findTestCase('Pages/Login/Tap Button Masuk'), [:], FailureHandling.STOP_ON_FAILURE)
 			}
 		} catch (Exception e) {
-			WebUI.callTestCase(findTestCase('Step Definition/Feature Login/LGN01 - User login with valid credentials'), [('email'):'peter.rg@gmail.com', ('password'):'a1b2c3d4'])
+			Mobile.callTestCase(findTestCase('Pages/Navbar/Tap Akun'), [:], FailureHandling.STOP_ON_FAILURE)
+			Mobile.callTestCase(findTestCase('Pages/Akun/Tap Masuk from Akun Page'), [:], FailureHandling.STOP_ON_FAILURE)
+			Mobile.callTestCase(findTestCase('Pages/Login/Input Email'), [('email') : 'peter.rg@gmail.com'], FailureHandling.STOP_ON_FAILURE)
+			Mobile.callTestCase(findTestCase('Pages/Login/Input Password'), [('password') : 'a1b2c3d4'], FailureHandling.STOP_ON_FAILURE)
+			Mobile.callTestCase(findTestCase('Pages/Login/Tap Button Masuk'), [:], FailureHandling.STOP_ON_FAILURE)
 		}
 	}
-	
+
 	@And('User already logged in and have no order')
 	public void user_login_no_order() {
 		try {
-			WebUI.callTestCase(findTestCase('Pages/Homepage/Verify Already Logged In'), [:], FailureHandling.STOP_ON_FAILURE)
+			Mobile.callTestCase(findTestCase('Pages/Homepage/Verify Already Logged In'), [:], FailureHandling.STOP_ON_FAILURE)
 			try {
-				WebUI.callTestCase(findTestCase('Pages/Pesanan Saya/Verify Account Have No Order'), [:], FailureHandling.STOP_ON_FAILURE)
+				Mobile.callTestCase(findTestCase('Pages/Pesanan Saya/Verify Account Have No Order'), [:], FailureHandling.STOP_ON_FAILURE)
 			} catch (Exception e) {
-				WebUI.callTestCase(findTestCase('Step Definition/Feature Logout/LGT01 - Logout'), [:], FailureHandling.STOP_ON_FAILURE)
-				WebUI.callTestCase(findTestCase('Step Definition/Feature Login/LGN01 - User login with valid credentials'), [('email'):'qatest@mytestmail.net', ('password'):'a1b2c3d4'])
+				Mobile.callTestCase(findTestCase('Step Definition/Feature Logout/LGT01 - Logout'), [:], FailureHandling.STOP_ON_FAILURE)
+				Mobile.callTestCase(findTestCase('Pages/Navbar/Tap Akun'), [:], FailureHandling.STOP_ON_FAILURE)
+				Mobile.callTestCase(findTestCase('Pages/Akun/Tap Masuk from Akun Page'), [:], FailureHandling.STOP_ON_FAILURE)
+				Mobile.callTestCase(findTestCase('Pages/Login/Input Email'), [('email') : 'qatest@mytestmail.net'], FailureHandling.STOP_ON_FAILURE)
+				Mobile.callTestCase(findTestCase('Pages/Login/Input Password'), [('password') : 'a1b2c3d4'], FailureHandling.STOP_ON_FAILURE)
+				Mobile.callTestCase(findTestCase('Pages/Login/Tap Button Masuk'), [:], FailureHandling.STOP_ON_FAILURE)
 			}
 		} catch (Exception e) {
-			WebUI.callTestCase(findTestCase('Step Definition/Feature Login/LGN01 - User login with valid credentials'), [('email'):'qatest@mytestmail.net', ('password'):'a1b2c3d4'])
+			Mobile.callTestCase(findTestCase('Pages/Navbar/Tap Akun'), [:], FailureHandling.STOP_ON_FAILURE)
+			Mobile.callTestCase(findTestCase('Pages/Akun/Tap Masuk from Akun Page'), [:], FailureHandling.STOP_ON_FAILURE)
+			Mobile.callTestCase(findTestCase('Pages/Login/Input Email'), [('email') : 'qatest@mytestmail.net'], FailureHandling.STOP_ON_FAILURE)
+			Mobile.callTestCase(findTestCase('Pages/Login/Input Password'), [('password') : 'a1b2c3d4'], FailureHandling.STOP_ON_FAILURE)
+			Mobile.callTestCase(findTestCase('Pages/Login/Tap Button Masuk'), [:], FailureHandling.STOP_ON_FAILURE)
 		}
 	}
-	
+
 	@And('User tap Pesanan Saya')
 	public void tap_pesanan() {
-		WebUI.callTestCase(findTestCase('Pages/Akun/Tap Pesanan Saya'), [:], FailureHandling.STOP_ON_FAILURE)
+		Mobile.callTestCase(findTestCase('Pages/Akun/Tap Pesanan Saya'), [:], FailureHandling.STOP_ON_FAILURE)
 	}
-	
+
 	@Then('Verify card list exists')
 	public void verify_card_list_exists() {
-		WebUI.callTestCase(findTestCase('Pages/Pesanan Saya/Verify Pesanan Card'), [:], FailureHandling.STOP_ON_FAILURE)
+		Mobile.callTestCase(findTestCase('Pages/Pesanan Saya/Verify Pesanan Card'), [:], FailureHandling.STOP_ON_FAILURE)
 	}
-	
+
 	@Then('Verify no Pesanan exists')
 	public void verify_no_pesanan_exists() {
-		WebUI.callTestCase(findTestCase('Pages/Pesanan Saya/Verify No Product'), [:], FailureHandling.STOP_ON_FAILURE)
+		Mobile.callTestCase(findTestCase('Pages/Pesanan Saya/Verify No Product'), [:], FailureHandling.STOP_ON_FAILURE)
 	}
 }

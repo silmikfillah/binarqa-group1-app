@@ -23,12 +23,12 @@ import org.junit.runner.RunWith
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-features = "Include/features/Register.feature",
+features = "Include/features/Feature Bid/Denied Buyer Offer.feature",
 glue = "stepDefinition",
 tags = "",
 monochrome = true,
-plugin = "html:Reports/Cucumber/Register"
+plugin = "html:Reports/Cucumber/Feature Bid/Denied Buyer Offer"
 )
 
-public class RunnerRegister {
+public class RunnerDeniedOffer {
 }
