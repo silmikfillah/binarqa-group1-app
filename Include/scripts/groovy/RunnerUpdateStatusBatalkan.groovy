@@ -23,7 +23,7 @@ import org.junit.runner.RunWith
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-features = "Include/features/Feature Bid/Update Status to Batalkan Transasi.feature",
+features = "Include/features/Feature Bid/Update Status to Batalkan Transaksi.feature",
 glue = "stepDefinition",
 tags = "",
 monochrome = true,

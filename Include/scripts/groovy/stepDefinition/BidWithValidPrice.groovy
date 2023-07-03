@@ -53,7 +53,7 @@ class BidWithValidPrice {
 		WebUI.callTestCase(findTestCase('Pages/Login/Input Password'), [('password') : 'a1b2c3d4'], FailureHandling.STOP_ON_FAILURE)
 		WebUI.callTestCase(findTestCase('Pages/Login/Tap Button Masuk'), [:], FailureHandling.STOP_ON_FAILURE)
 	}
-	
+
 	@Given("buyer sudah login")
 	public void buyer_sudah_login() {
 		WebUI.callTestCase(findTestCase('Pages/Navbar/Tap Akun'), [:], FailureHandling.STOP_ON_FAILURE)
@@ -102,5 +102,9 @@ class BidWithValidPrice {
 	@Then("buyer menunggu respon penjual")
 	public void buyer_menunggu_respon_penjual() {
 		WebUI.callTestCase(findTestCase('Pages/Buyer Bid/Verify Bid Valid'), [:], FailureHandling.STOP_ON_FAILURE)
+		Mobile.pressBack()
+		Mobile.pressBack()
+		WebUI.callTestCase(findTestCase('Pages/Navbar/Tap Akun'), [:])
+		WebUI.callTestCase(findTestCase('Pages/Akun/Tap Logout'), [:])
 	}
 }

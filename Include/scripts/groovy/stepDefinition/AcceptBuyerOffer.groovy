@@ -77,5 +77,10 @@ class AcceptBuyerOffer {
 	@Then("seller verify Hubungi via Whatsapp button")
 	public void seller_verify_Hubungi_via_Whatsapp_button() {
 		WebUI.callTestCase(findTestCase('Pages/Update Status Seller/Verify Hubungi Via Whatsapp'), [:], FailureHandling.STOP_ON_FAILURE)
+		Mobile.pressBack()
+		Mobile.pressBack()
+		Mobile.pressBack()
+		WebUI.callTestCase(findTestCase('Pages/Navbar/Tap Akun'), [:])
+		WebUI.callTestCase(findTestCase('Pages/Akun/Tap Logout'), [:])
 	}
 }

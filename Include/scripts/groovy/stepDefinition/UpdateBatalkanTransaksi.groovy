@@ -53,5 +53,9 @@ class UpdateBatalkanTransaksi {
 	@Then("seller verify Batalkan Transaksi")
 	public void seller_verify_Batalkan_Transaksi() {
 		WebUI.callTestCase(findTestCase('Pages/Update Status Seller/Verify Status Tolak Bid'), [:], FailureHandling.STOP_ON_FAILURE)
+		Mobile.pressBack()
+		Mobile.pressBack()
+		WebUI.callTestCase(findTestCase('Pages/Navbar/Tap Akun'), [:])
+		WebUI.callTestCase(findTestCase('Pages/Akun/Tap Logout'), [:])
 	}
 }

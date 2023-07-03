@@ -77,5 +77,9 @@ class DeniedBuyerOffer {
 	@Then("sellerr verify Penawaran ditolak")
 	public void sellerr_verify_Penawaran_ditolak() {
 		WebUI.callTestCase(findTestCase('Pages/Update Status Seller/Verify Status Tolak Bid'), [:], FailureHandling.STOP_ON_FAILURE)
+		Mobile.pressBack()
+		Mobile.pressBack()
+		WebUI.callTestCase(findTestCase('Pages/Navbar/Tap Akun'), [:])
+		WebUI.callTestCase(findTestCase('Pages/Akun/Tap Logout'), [:])
 	}
 }

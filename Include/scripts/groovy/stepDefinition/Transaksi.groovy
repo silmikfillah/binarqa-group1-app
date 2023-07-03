@@ -29,12 +29,12 @@ public class Transaksi {
 	public void tap_transaksi() {
 		WebUI.callTestCase(findTestCase('Pages/Navbar/Tap Transaksi'), [:], FailureHandling.STOP_ON_FAILURE)
 	}
-	
+
 	@Then('Verify Transaksi list exists')
 	public void verify_transaksi_list_exists() {
 		WebUI.callTestCase(findTestCase('Pages/Transaksi/Verify Transaction Card'), [:], FailureHandling.STOP_ON_FAILURE)
 	}
-	
+
 	@Then('Verify no Transaksi exists')
 	public void verify_no_transaksi_exists() {
 		WebUI.callTestCase(findTestCase('Pages/Pesanan Saya/Verify No Product'), [:], FailureHandling.STOP_ON_FAILURE)

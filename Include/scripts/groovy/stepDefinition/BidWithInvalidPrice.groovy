@@ -47,6 +47,7 @@ import cucumber.api.java.en.When
 class BidWithInvalidPrice {
 	@Given("buyer1 sudah login")
 	public void buyer1_sudah_login() {
+		Mobile.startApplication(System.getProperty("user.dir") + "\\Apk\\app-release-second-hand-gcp.apk", false)
 		WebUI.callTestCase(findTestCase('Pages/Navbar/Tap Akun'), [:], FailureHandling.STOP_ON_FAILURE)
 		WebUI.callTestCase(findTestCase('Pages/Akun/Tap Masuk from Akun Page'), [:], FailureHandling.STOP_ON_FAILURE)
 		WebUI.callTestCase(findTestCase('Pages/Login/Input Email'), [('email') : 'alexbeli@gmail.com'], FailureHandling.STOP_ON_FAILURE)
@@ -93,5 +94,9 @@ class BidWithInvalidPrice {
 	@Then("buyer1 menunggu respon penjual")
 	public void buyer1_menunggu_respon_penjual() {
 		WebUI.callTestCase(findTestCase('Pages/Buyer Bid/Verify Bid Valid'), [:], FailureHandling.STOP_ON_FAILURE)
+		Mobile.pressBack()
+		Mobile.pressBack()
+		WebUI.callTestCase(findTestCase('Pages/Navbar/Tap Akun'), [:])
+		WebUI.callTestCase(findTestCase('Pages/Akun/Tap Logout'), [:])
 	}
 }
