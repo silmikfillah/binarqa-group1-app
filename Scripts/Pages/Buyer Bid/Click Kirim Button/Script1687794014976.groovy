@@ -17,5 +17,8 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-Mobile.tap(findTestObject('Product Detail/android.widget.Button - Kirim Harga Nego'), 2, FailureHandling.STOP_ON_FAILURE)
+Mobile.waitForElementPresent(findTestObject('Product Detail/android.widget.Button - Kirim Harga Nego'), 0)
 
+Mobile.tap(findTestObject('Product Detail/android.widget.Button - Kirim Harga Nego'), 0, FailureHandling.STOP_ON_FAILURE)
+
+Mobile.delay(5)

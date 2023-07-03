@@ -21,9 +21,9 @@ WebUI.callTestCase(findTestCase('Pages/Navbar/Tap Akun'), [:], FailureHandling.S
 
 WebUI.callTestCase(findTestCase('Pages/Akun/Tap Masuk from Akun Page'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('Pages/Login/Input Email'), [('email') : 'alexjual1@gmail.com'], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Pages/Login/Input Email'), [('email') : 'prabotanpreloved@mytestmail.net'], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('Pages/Login/Input Password'), [('password') : 'asdqwe'], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Pages/Login/Input Password'), [('password') : 'a1b2c3d4'], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.callTestCase(findTestCase('Pages/Login/Tap Button Masuk'), [:], FailureHandling.STOP_ON_FAILURE)
 
@@ -38,7 +38,7 @@ WebUI.callTestCase(findTestCase('Pages/Update Status Seller/Click Terima'), [:],
 WebUI.callTestCase(findTestCase('Pages/Update Status Seller/Verify Hubungi Via Whatsapp'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.callTestCase(findTestCase('Pages/Buyer Bid/Click Back'), [:], FailureHandling.STOP_ON_FAILURE)
-
+WebUI.callTestCase(findTestCase('Pages/Buyer Bid/Click Back'), [:], FailureHandling.STOP_ON_FAILURE)
 WebUI.callTestCase(findTestCase('Pages/Buyer Bid/Click Back'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.callTestCase(findTestCase('Pages/Navbar/Tap Akun'), [:], FailureHandling.STOP_ON_FAILURE)

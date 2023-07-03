@@ -15,7 +15,7 @@
       <guid>b44befe3-daaa-4120-a16c-78bacff95fe6</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Step Definition/Feature Pesanan Saya/PSN02 - See Pesanan Saya When No Bid Made</testCaseId>
+      <testCaseId>Test Cases/Step Definition/Feature Transaksi/TRS01 - See Transaksi</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
 </TestSuiteEntity>

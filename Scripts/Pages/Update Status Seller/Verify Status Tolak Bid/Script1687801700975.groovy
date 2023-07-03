@@ -17,6 +17,8 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+Mobile.delay(10, FailureHandling.STOP_ON_FAILURE)
+
 Mobile.verifyElementText(findTestObject('Daftar Jual Saya/Detail/android.widget.TextView - Penawaran ditolak'), 'Penawaran ditolak', 
     FailureHandling.STOP_ON_FAILURE)
 
