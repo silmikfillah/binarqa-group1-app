@@ -18,4 +18,4 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
 //Mobile.tap(findTestObject('Product Detail/android.widget.ImageView - Back Button'), 0)
-Mobile.ppressBack()
+Mobile.pressBack()
