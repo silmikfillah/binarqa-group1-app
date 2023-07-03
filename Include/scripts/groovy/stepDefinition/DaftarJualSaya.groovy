@@ -62,6 +62,7 @@ public class DaftarJualSaya {
 
 	@And('User already logged in and have product')
 	public void user_login_have_product() {
+		Mobile.startApplication(System.getProperty("user.dir") + "\\Apk\\app-release-second-hand-gcp.apk", false)
 		try {
 			WebUI.callTestCase(findTestCase('Pages/Homepage/Verify Already Logged In'), [:], FailureHandling.STOP_ON_FAILURE)
 			try {
@@ -85,6 +86,7 @@ public class DaftarJualSaya {
 
 	@And('User already logged in and have no product')
 	public void user_login_no_product() {
+		Mobile.startApplication(System.getProperty("user.dir") + "\\Apk\\app-release-second-hand-gcp.apk", false)
 		try {
 			WebUI.callTestCase(findTestCase('Pages/Homepage/Verify Already Logged In'), [:], FailureHandling.STOP_ON_FAILURE)
 			try {

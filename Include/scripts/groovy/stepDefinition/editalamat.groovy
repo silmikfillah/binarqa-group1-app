@@ -47,6 +47,7 @@ import cucumber.api.java.en.When
 class editalamat {
 	@Given("User login to akun")
 	public void user_login_to_akun() {
+		Mobile.startApplication(System.getProperty("user.dir") + "\\Apk\\app-release-second-hand-gcp.apk", false)
 		WebUI.callTestCase(findTestCase('Pages/Navbar/Tap Akun'), [:], FailureHandling.STOP_ON_FAILURE)
 		
 		WebUI.callTestCase(findTestCase('Pages/Edit Profile/Button-masuk'), [:], FailureHandling.STOP_ON_FAILURE)
@@ -76,6 +77,8 @@ class editalamat {
 	@Then("User verify success massages")
 	public void user_verify_success_massages() {
 		WebUI.callTestCase(findTestCase('Pages/Edit Profile/edit profile deksa/verify'), [:], FailureHandling.STOP_ON_FAILURE)
+		Mobile.pressBack()
+		WebUI.callTestCase(findTestCase('Pages/Akun/Tap Logout'), [:])
 		
 	}
 }

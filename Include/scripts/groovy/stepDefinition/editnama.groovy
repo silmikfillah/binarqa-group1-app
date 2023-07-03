@@ -47,8 +47,8 @@ import cucumber.api.java.en.When
 class editnama {
 	@Given("User login to homapage")
 	public void user_login_to_homapage() {
+		Mobile.startApplication(System.getProperty("user.dir") + "\\Apk\\app-release-second-hand-gcp.apk", false)
 		WebUI.callTestCase(findTestCase('Pages/Navbar/Tap Akun'), [:], FailureHandling.STOP_ON_FAILURE)
-
 		WebUI.callTestCase(findTestCase('Pages/Edit Profile/Button-masuk'), [:], FailureHandling.STOP_ON_FAILURE)
 	}
 

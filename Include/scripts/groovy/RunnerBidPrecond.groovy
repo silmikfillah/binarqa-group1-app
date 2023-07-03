@@ -1,5 +1,3 @@
-package stepDefinition
-
 import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
@@ -17,25 +15,19 @@ import com.kms.katalon.core.testobject.TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
-import cucumber.api.java.en.When
-import cucumber.api.java.en.Given
-import cucumber.api.java.en.Then
-import cucumber.api.java.en.And
+
 import internal.GlobalVariable
+import cucumber.api.CucumberOptions
+import cucumber.api.junit.Cucumber
+import org.junit.runner.RunWith
 
-public class DeleteProduct {
-	@When("User tap button trash")
-	public void user_tap_button_trash() {
-		WebUI.callTestCase(findTestCase('Pages/Delete Product/Tap button Trash'), [:], FailureHandling.STOP_ON_FAILURE)
-	}
+@RunWith(Cucumber.class)
+@CucumberOptions(
+features = "Include/features/Feature Bid/Bid Precond.feature",
+glue = "stepDefinition",
+tags = "",
+monochrome = true
+)
 
-	@And("User tap Hapus")
-	public void user_tap_Hapus() {
-		WebUI.callTestCase(findTestCase('Pages/Delete Product/Tap Hapus in Prompt'), [:], FailureHandling.STOP_ON_FAILURE)
-	}
-
-	@Then("User will see success delete message")
-	public void user_will_see_success_delete_message() {
-		WebUI.callTestCase(findTestCase('Pages/Delete Product/Verify Success Message'), [:], FailureHandling.STOP_ON_FAILURE)
-	}
+public class RunnerBidPrecond {
 }

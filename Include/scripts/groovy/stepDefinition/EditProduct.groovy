@@ -27,6 +27,7 @@ public class EditProduct {
 	@Given("User login as seller")
 	public void user_login_as_seller() {
 		try {
+			Mobile.startApplication(System.getProperty("user.dir") + "\\Apk\\app-release-second-hand-gcp.apk", false)
 			WebUI.callTestCase(findTestCase('Pages/Homepage/Verify Already Logged In'), [:], FailureHandling.STOP_ON_FAILURE)
 		} catch (Exception e) {
 			WebUI.callTestCase(findTestCase('Step Definition/Feature Login/LGN01 - User login with valid credentials'), [('email') : 'groupsatu@gmail.com', ('password') : 'abc!12345'])
@@ -63,9 +64,9 @@ public class EditProduct {
 			Mobile.callTestCase(findTestCase('Pages/Edit Product/Edit Harga Produk'), [('hargaProduk') : ''], FailureHandling.STOP_ON_FAILURE)
 		}else {
 			Mobile.callTestCase(findTestCase('Pages/Edit Product/Edit Harga Produk'), [('hargaProduk') : harga], FailureHandling.STOP_ON_FAILURE)
-		}		
+		}
 	}
-	
+
 	@When("User edit Kategori with (.*)")
 	public void user_input_category(String kategori) {
 		if(kategori == 'empty') {

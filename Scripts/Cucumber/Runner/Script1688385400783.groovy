@@ -17,19 +17,20 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-try{CucumberKW.runWithCucumberRunner(RunnerRegister.class)}catch(Exception){}
-try{CucumberKW.runWithCucumberRunner(RunnerLogin.class)}catch(Exception){}
-try{CucumberKW.runWithCucumberRunner(RunnerEditProfile.class)}catch(Exception){}
+//try{CucumberKW.runWithCucumberRunner(RunnerRegister.class)}catch(Exception){}
+//try{CucumberKW.runWithCucumberRunner(RunnerLogin.class)}catch(Exception){}
+//try{CucumberKW.runWithCucumberRunner(RunnerEditProfile.class)}catch(Exception){}
 try{CucumberKW.runWithCucumberRunner(RunnerAddProduct.class)}catch(Exception){}
 try{CucumberKW.runWithCucumberRunner(RunnerEditProduct.class)}catch(Exception){}
 try{CucumberKW.runWithCucumberRunner(RunnerDeleteProduct.class)}catch(Exception){}
 try{CucumberKW.runWithCucumberRunner(RunnerDaftarJual.class)}catch(Exception){}
 try{CucumberKW.runWithCucumberRunner(RunnerSearch.class)}catch(Exception){}
-try{CucumberKW.runWithCucumberRunner(RunnerBidValidPrice.class)}catch(Exception){}
-try{CucumberKW.runWithCucumberRunner(RunnerAcceptOffer.class)}catch(Exception){}
-try{CucumberKW.runWithCucumberRunner(RunnerUpdateStatusBerhasil.class)}catch(Exception){}
-try{CucumberKW.runWithCucumberRunner(RunnerUpdateStatusBatalkan.class)}catch(Exception){}
 try{CucumberKW.runWithCucumberRunner(RunnerBidInvalidPrice.class)}catch(Exception){}
 try{CucumberKW.runWithCucumberRunner(RunnerDeniedOffer.class)}catch(Exception){}
+try{CucumberKW.runWithCucumberRunner(RunnerBidValidPrice.class)}catch(Exception){}
+try{CucumberKW.runWithCucumberRunner(RunnerAcceptOffer.class)}catch(Exception){}
+try{CucumberKW.runWithCucumberRunner(RunnerUpdateStatusBatalkan.class)}catch(Exception){}
+try{CucumberKW.runWithCucumberRunner(RunnerBidPrecond.class)}catch(Exception){}
+try{CucumberKW.runWithCucumberRunner(RunnerUpdateStatusBerhasil.class)}catch(Exception){}
 try{CucumberKW.runWithCucumberRunner(RunnerTransaksi.class)}catch(Exception){}
 try{CucumberKW.runWithCucumberRunner(RunnerPesananSaya.class)}catch(Exception){}

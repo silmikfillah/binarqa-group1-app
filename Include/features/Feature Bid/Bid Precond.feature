@@ -1,12 +1,9 @@
 Feature: Buyer Bid Valid
   Buyer want to bid with Valid Price
 
-  @BidValid
   Scenario: Buyer - Bid with Valid Price
-  
-    Given buyer sudah login
+    Given buyer2 sudah login
     And buyer berada di halaman produk
-    
     When buyer click search
     And buyer input "barang dijual"
     And buyer click first product

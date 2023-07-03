@@ -47,6 +47,7 @@ import cucumber.api.java.en.When
 class editnomorhp {
 	@Given("User login homapage")
 	public void user_login_homapage() {
+		Mobile.startApplication(System.getProperty("user.dir") + "\\Apk\\app-release-second-hand-gcp.apk", false)
 		WebUI.callTestCase(findTestCase('Pages/Navbar/Tap Akun'), [:], FailureHandling.STOP_ON_FAILURE)
 
 		WebUI.callTestCase(findTestCase('Pages/Edit Profile/Button-masuk'), [:], FailureHandling.STOP_ON_FAILURE)
@@ -73,5 +74,7 @@ class editnomorhp {
 	@Then("User verify success massages update profile")
 	public void user_verify_success_massages_update_profile() {
 		WebUI.callTestCase(findTestCase('Pages/Edit Profile/edit profile deksa/verify'), [:], FailureHandling.STOP_ON_FAILURE)
+		Mobile.pressBack()
+		WebUI.callTestCase(findTestCase('Pages/Akun/Tap Logout'), [:])
 	}
 }
