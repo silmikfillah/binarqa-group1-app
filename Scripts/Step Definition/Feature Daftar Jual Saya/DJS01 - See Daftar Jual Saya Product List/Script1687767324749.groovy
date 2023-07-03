@@ -22,13 +22,21 @@ WebUI.callTestCase(findTestCase('Pages/Homepage/Verify on Homepage'), [:], Failu
 try {
 	WebUI.callTestCase(findTestCase('Pages/Homepage/Verify Already Logged In'), [:], FailureHandling.STOP_ON_FAILURE)
 	try {
-		WebUI.callTestCase(findTestCase('Pages/Daftar Jual Saya/Verify Account Have Product'), [:], FailureHandling.STOP_ON_FAILURE)
+		Mobile.callTestCase(findTestCase('Pages/Daftar Jual Saya/Verify Account Have Product'), [:], FailureHandling.STOP_ON_FAILURE)
 	} catch (Exception e) {
-		WebUI.callTestCase(findTestCase('Step Definition/Feature Logout/LGT01 - Logout'), [:], FailureHandling.STOP_ON_FAILURE)
-		WebUI.callTestCase(findTestCase('Step Definition/Feature Login/LGN01 - User login with valid credentials'), [('email'):'garasimobil@mytestmail.net', ('password'):'a1b2c3d4'])
+		Mobile.callTestCase(findTestCase('Step Definition/Feature Logout/LGT01 - Logout'), [:], FailureHandling.STOP_ON_FAILURE)
+		Mobile.callTestCase(findTestCase('Pages/Navbar/Tap Akun'), [:], FailureHandling.STOP_ON_FAILURE)
+		Mobile.callTestCase(findTestCase('Pages/Akun/Tap Masuk from Akun Page'), [:], FailureHandling.STOP_ON_FAILURE)
+		Mobile.callTestCase(findTestCase('Pages/Login/Input Email'), [('email') : 'garasimobil@mytestmail.net'], FailureHandling.STOP_ON_FAILURE)
+		Mobile.callTestCase(findTestCase('Pages/Login/Input Password'), [('password') : 'a1b2c3d4'], FailureHandling.STOP_ON_FAILURE)
+		Mobile.callTestCase(findTestCase('Pages/Login/Tap Button Masuk'), [:], FailureHandling.STOP_ON_FAILURE)
 	}
 } catch (Exception e) {
-	WebUI.callTestCase(findTestCase('Step Definition/Feature Login/LGN01 - User login with valid credentials'), [('email'):'garasimobil@mytestmail.net', ('password'):'a1b2c3d4'])
+	Mobile.callTestCase(findTestCase('Pages/Navbar/Tap Akun'), [:], FailureHandling.STOP_ON_FAILURE)
+	Mobile.callTestCase(findTestCase('Pages/Akun/Tap Masuk from Akun Page'), [:], FailureHandling.STOP_ON_FAILURE)
+	Mobile.callTestCase(findTestCase('Pages/Login/Input Email'), [('email') : 'garasimobil@mytestmail.net'], FailureHandling.STOP_ON_FAILURE)
+	Mobile.callTestCase(findTestCase('Pages/Login/Input Password'), [('password') : 'a1b2c3d4'], FailureHandling.STOP_ON_FAILURE)
+	Mobile.callTestCase(findTestCase('Pages/Login/Tap Button Masuk'), [:], FailureHandling.STOP_ON_FAILURE)
 }
 
 WebUI.callTestCase(findTestCase('Pages/Navbar/Tap Akun'), [:], FailureHandling.STOP_ON_FAILURE)
