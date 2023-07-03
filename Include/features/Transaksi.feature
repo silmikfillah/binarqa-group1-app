@@ -2,15 +2,15 @@
 Feature: Transaksi
   As a User, I want to see Transaksi Page
 
-  @TRS01
-  Scenario: See Transaksi
+  @Positive
+  Scenario: TRS01 - See Transaksi
     Given User on homepage
     And User already logged in and have order
     When User tap Transaksi navbar
     Then Verify Transaksi list exists
     
-  @TRS02
-  Scenario: See Transaksi - No Transaction Made
+  @Negative
+  Scenario: TRS02 - See Transaksi While No Transaction Made
     Given User on homepage
     And User already logged in and have no order
     When User tap Transaksi navbar

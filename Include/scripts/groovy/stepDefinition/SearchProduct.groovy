@@ -30,7 +30,7 @@ public class SearchProduct {
 		WebUI.callTestCase(findTestCase('Pages/Homepage/Tap Search Field'), [:], FailureHandling.STOP_ON_FAILURE)
 	}
 
-	@And('User input text (.*) in search field')
+	@And('User input (.*) in search field')
 	public void input_text_search(String searchText) {
 		WebUI.callTestCase(findTestCase('Pages/Search Page/Input Text Search Field'), [('searchText') : searchText], FailureHandling.STOP_ON_FAILURE)
 	}
