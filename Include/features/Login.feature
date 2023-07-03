@@ -15,7 +15,7 @@ Feature: Android User Login
       | groupsatu@gmail.com | abc!12345 | success |
 
   @LGN02 @LGN05 @Negative
-  Scenario Outline: Verify to login using invalid email
+  Scenario Outline: Verify to login using invalid email: <condition>
     Given I already register an account and on the login page
     When I input email with <email>
     And I input password with <password>
@@ -23,13 +23,13 @@ Feature: Android User Login
     Then I should see the next step <status>
 
     Examples: 
-      | email                  | password  | status      |
-      | unregistered@gmail.com |  12345678 | incorrect   |
-      | groupsatuuuu@gmail.com |  12345678 | incorrect   |
-      | empty                  |  12345678 | empty email |
-      | groupsatu@yahoo        |  12345678 | invalid     |
-      | namaku1357.com         | abc!12345 | invalid     |
-      | namaku1357gmail        | abc!12345 | invalid     |
+      | email                  | password  | status      | condition                 |
+      | unregistered@gmail.com |  12345678 | incorrect   | unregistered email        |
+      | groupsatuuuu@gmail.com |  12345678 | incorrect   | wrong email               |
+      | empty                  |  12345678 | empty email | empty email               |
+      | groupsatu@yahoo        |  12345678 | invalid     | non-tld email             |
+      | namaku1357.com         | abc!12345 | invalid     | without @                 |
+      | namaku1357gmail        | abc!12345 | invalid     | without @ and without tld |
 
   @LGN03 @Negative
   Scenario Outline: Verify to login without enter any data into the fields

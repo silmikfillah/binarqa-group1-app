@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>EPD06 - Edit Product with Empty Deskripsi Produk</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>1219c6d2-e8ba-4dc8-a462-9a98a9cf242f</testCaseGuid>
+</TestCaseEntity>

@@ -48,13 +48,13 @@ class editall {
 	@Given("User login")
 	public void user_login() {
 		WebUI.callTestCase(findTestCase('Pages/Navbar/Tap Akun'), [:], FailureHandling.STOP_ON_FAILURE)
-		
+
 		WebUI.callTestCase(findTestCase('Pages/Edit Profile/Button-masuk'), [:], FailureHandling.STOP_ON_FAILURE)
-		
+
 		WebUI.callTestCase(findTestCase('Pages/Edit Profile/Input_email'), [:], FailureHandling.STOP_ON_FAILURE)
-		
+
 		WebUI.callTestCase(findTestCase('Pages/Edit Profile/Input_password'), [:], FailureHandling.STOP_ON_FAILURE)
-		
+
 		WebUI.callTestCase(findTestCase('Pages/Edit Profile/Button-masuk2'), [:], FailureHandling.STOP_ON_FAILURE)
 	}
 
@@ -66,36 +66,33 @@ class editall {
 	@When("User input nama")
 	public void user_input_nama() {
 		WebUI.callTestCase(findTestCase('Pages/Edit Profile/edit profile deksa/tap nama'), [:], FailureHandling.STOP_ON_FAILURE)
-		
+
 		WebUI.callTestCase(findTestCase('Pages/Edit Profile/Button simpan'), [:], FailureHandling.STOP_ON_FAILURE)
 	}
 
 	@When("User input nomor handphone")
 	public void user_input_nomor_handphone() {
 		WebUI.callTestCase(findTestCase('Pages/Edit Profile/edit profile deksa/tap nomor'), [:], FailureHandling.STOP_ON_FAILURE)
-		
+
 		WebUI.callTestCase(findTestCase('Pages/Edit Profile/Button simpan'), [:], FailureHandling.STOP_ON_FAILURE)
-		
 	}
 
 	@When("User input kota")
 	public void user_input_kota() {
 		WebUI.callTestCase(findTestCase('Pages/Edit Profile/edit profile deksa/tap kota'), [:], FailureHandling.STOP_ON_FAILURE)
-		
+
 		WebUI.callTestCase(findTestCase('Pages/Edit Profile/Button simpan'), [:], FailureHandling.STOP_ON_FAILURE)
 	}
 
 	@When("User input alamat")
 	public void user_input_alamat() {
 		WebUI.callTestCase(findTestCase('Pages/Edit Profile/edit profile deksa/tap alamat'), [:], FailureHandling.STOP_ON_FAILURE)
-		
+
 		WebUI.callTestCase(findTestCase('Pages/Edit Profile/Button simpan'), [:], FailureHandling.STOP_ON_FAILURE)
 	}
 
 	@Then("User verify success")
 	public void user_verify_success() {
 		WebUI.callTestCase(findTestCase('Pages/Edit Profile/edit profile deksa/verify'), [:], FailureHandling.STOP_ON_FAILURE)
-		
-		
 	}
 }

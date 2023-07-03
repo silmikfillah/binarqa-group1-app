@@ -2,8 +2,8 @@
 Feature: Add Product
   As a User, I want to add product to sell in Secondhand App
 
-  @ADDP01
-  Scenario Outline: Add Product With Input Valid Data
+  @Positive
+  Scenario Outline: <case> - Add Product With Input Valid Data
     Given User on homepage
     And User already logged in
     When User tap FAB Jual
@@ -17,11 +17,11 @@ Feature: Add Product
     Then Verify success message
 
     Examples: 
-      | namaProduk | hargaProduk | kategoriProduk | lokasiProduk | deskripsiProduk    | fotoProduk |
-      | Produk A   |       50000 | Kesehatan      | Kota         | Masih Bagus Banget | image      |
+      | namaProduk | hargaProduk | kategoriProduk | lokasiProduk | deskripsiProduk    | fotoProduk | case   |
+      | Produk A   |       50000 | Kesehatan      | Kota         | Masih Bagus Banget | image      | ADDP01 |
 
-  @ADDP02 @ADDP03 @ADDP04 @ADDP05 @ADDP06 @ADDP07
-  Scenario Outline: Add Product Without Input One Field
+  @Negative
+  Scenario Outline: <case> - Add Product without input <condition>
     Given User on homepage
     And User already logged in
     When User tap FAB Jual
@@ -35,16 +35,16 @@ Feature: Add Product
     Then Verify Error <error> message appeared
 
     Examples: 
-      | namaProduk    | hargaProduk | kategoriProduk     | lokasiProduk | deskripsiProduk  | fotoProduk | error          |
-      | empty         |       50000 | Otomotif           | Kota         | Masih bagus      | image      | namaEmpty      |
-      | Hotwheels     | empty       | Hobi dan Koleksi   | Semarang     | Masih segel      | image      | hargaEmpty     |
-      | Gelas Estetik |       75000 | empty              | Balikpapan   | Unik dan Estetik | image      | kategoriEmpty  |
-      | Speaker       |      250000 | Elektronik         | empty        | Lecet pemakaian  | image      | lokasiEmpty    |
-      | Lemari Unik   |      169000 | Perlengkapan Rumah | Jaksel       | empty            | image      | deskripsiEmpty |
-      | Canon         |     7500000 | Fotografi          | Surabaya     | Masih mulus      | empty      | fotoEmpty      |
+      | namaProduk    | hargaProduk | kategoriProduk     | lokasiProduk | deskripsiProduk  | fotoProduk | error          | case   | condition        |
+      | empty         |       50000 | Otomotif           | Kota         | Masih bagus      | image      | namaEmpty      | ADDP02 | Nama Produk      |
+      | Hotwheels     | empty       | Hobi dan Koleksi   | Semarang     | Masih segel      | image      | hargaEmpty     | ADDP03 | Harga Produk     |
+      | Gelas Estetik |       75000 | empty              | Balikpapan   | Unik dan Estetik | image      | kategoriEmpty  | ADDP04 | Kategori Produk  |
+      | Speaker       |      250000 | Elektronik         | empty        | Lecet pemakaian  | image      | lokasiEmpty    | ADDP05 | Lokasi Produk    |
+      | Lemari Unik   |      169000 | Perlengkapan Rumah | Jaksel       | empty            | image      | deskripsiEmpty | ADDP06 | Deskripsi Produk |
+      | Canon         |     7500000 | Fotografi          | Surabaya     | Masih mulus      | empty      | fotoEmpty      | ADDP07 | Foto Produk      |
 
-  @ADDP08
-  Scenario: Add Product While Not Logged In
+  @Negative
+  Scenario: ADDP08 - Add Product While Not Logged In
     Given User on homepage
     And User not logged in
     When User tap FAB Jual

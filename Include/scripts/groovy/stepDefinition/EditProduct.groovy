@@ -38,8 +38,8 @@ public class EditProduct {
 		Mobile.callTestCase(findTestCase('Pages/Navbar/Tap Akun'), [:], FailureHandling.STOP_ON_FAILURE)
 	}
 
-	@And("User tab Daftar Product")
-	public void user_tab_daftar_product() {
+	@And("User tab Daftar Jual")
+	public void user_tab_daftar_jual() {
 		Mobile.callTestCase(findTestCase('Pages/Akun/Tap Daftar Jual Saya'), [:], FailureHandling.STOP_ON_FAILURE)
 	}
 
@@ -48,29 +48,49 @@ public class EditProduct {
 		WebUI.callTestCase(findTestCase('Pages/Edit Product/Tap Produk'), [:], FailureHandling.STOP_ON_FAILURE)
 	}
 
-	@When("User input product name")
-	public void user_input_product_name() {
-		Mobile.callTestCase(findTestCase('Pages/Edit Product/Edit Nama Produk'), [('namaProduk') : 'Baju'], FailureHandling.STOP_ON_FAILURE)
+	@When("User edit Nama Produk with (.*)")
+	public void user_input_product_name(String nama_produk) {
+		if(nama_produk == 'empty') {
+			Mobile.callTestCase(findTestCase('Pages/Edit Product/Edit Nama Produk'), [('namaProduk') : ''], FailureHandling.STOP_ON_FAILURE)
+		}else {
+			Mobile.callTestCase(findTestCase('Pages/Edit Product/Edit Nama Produk'), [('namaProduk') : nama_produk], FailureHandling.STOP_ON_FAILURE)
+		}
 	}
 
-	@When("User input product price")
-	public void user_input_product_price() {
-		WebUI.callTestCase(findTestCase('Pages/Edit Product/Edit Harga Produk'), [('hargaProduk') : '100000'], FailureHandling.STOP_ON_FAILURE)
+	@When("User edit Harga Produk with (.*)")
+	public void user_input_product_price(String harga) {
+		if(harga == 'empty') {
+			Mobile.callTestCase(findTestCase('Pages/Edit Product/Edit Harga Produk'), [('hargaProduk') : ''], FailureHandling.STOP_ON_FAILURE)
+		}else {
+			Mobile.callTestCase(findTestCase('Pages/Edit Product/Edit Harga Produk'), [('hargaProduk') : harga], FailureHandling.STOP_ON_FAILURE)
+		}		
+	}
+	
+	@When("User edit Kategori with (.*)")
+	public void user_input_category(String kategori) {
+		if(kategori == 'empty') {
+			Mobile.callTestCase(findTestCase('Pages/Edit Product/Edit Kategori Produk'), [('kategoriProduk') : ''], FailureHandling.STOP_ON_FAILURE)
+		}else {
+			Mobile.callTestCase(findTestCase('Pages/Edit Product/Edit Kategori Produk'), [('kategoriProduk') : kategori], FailureHandling.STOP_ON_FAILURE)
+		}
 	}
 
-	@When("User choose category")
-	public void user_choose_category() {
-		WebUI.callTestCase(findTestCase('Pages/Edit Product/Edit Kategori Produk'), [('kategoriProduk') : 'Elektronik'], FailureHandling.STOP_ON_FAILURE)
+	@When("User edit Lokasi with (.*)")
+	public void user_input_location(String lokasi) {
+		if(lokasi == 'empty') {
+			Mobile.callTestCase(findTestCase('Pages/Edit Product/Edit Lokasi Produk'), [('lokasiProduk') : ''], FailureHandling.STOP_ON_FAILURE)
+		}else {
+			Mobile.callTestCase(findTestCase('Pages/Edit Product/Edit Lokasi Produk'), [('lokasiProduk') : lokasi], FailureHandling.STOP_ON_FAILURE)
+		}
 	}
 
-	@When("User input location")
-	public void user_input_location() {
-		WebUI.callTestCase(findTestCase('Pages/Edit Product/Edit Lokasi Produk'), [('lokasiProduk') : 'Serang'], FailureHandling.STOP_ON_FAILURE)
-	}
-
-	@When("User input product description")
-	public void user_input_product_description() {
-		WebUI.callTestCase(findTestCase('Pages/Edit Product/Edit Deskripsi Produk'), [('deskripsiProduk') : 'Baju Bagus Banget'], FailureHandling.STOP_ON_FAILURE)
+	@When("User edit Deskripsi with (.*)")
+	public void user_input_product_description(String deskripsi) {
+		if(deskripsi == 'empty') {
+			Mobile.callTestCase(findTestCase('Pages/Edit Product/Edit Deskripsi Produk'), [('deskripsiProduk') : ''], FailureHandling.STOP_ON_FAILURE)
+		}else {
+			Mobile.callTestCase(findTestCase('Pages/Edit Product/Edit Deskripsi Produk'), [('deskripsiProduk') : deskripsi], FailureHandling.STOP_ON_FAILURE)
+		}
 	}
 
 
@@ -79,8 +99,31 @@ public class EditProduct {
 		Mobile.callTestCase(findTestCase('Pages/Edit Product/Tap Terbitkan Button'), [:], FailureHandling.STOP_ON_FAILURE)
 	}
 
-	@Then("User will see success message")
-	public void user_will_see_success_message() {
-		WebUI.callTestCase(findTestCase('Pages/Edit Product/Verify Success Message'), [:], FailureHandling.STOP_ON_FAILURE)
+	@Then("User will see (.*) message")
+	public void user_will_see_message(String status) {
+		if(status == 'success') {
+			WebUI.callTestCase(findTestCase('Pages/Edit Product/Verify Success Message'), [:], FailureHandling.STOP_ON_FAILURE)
+		}
+		else if(status == 'error nama'){
+			Mobile.callTestCase(findTestCase('Pages/Edit Product/Verify Error Message - Nama Produk'), [:], FailureHandling.STOP_ON_FAILURE)
+			Mobile.pressBack()
+		}
+		else if(status == 'error harga'){
+			Mobile.callTestCase(findTestCase('Pages/Edit Product/Verify Error Message - Harga Produk'), [:], FailureHandling.STOP_ON_FAILURE)
+			Mobile.pressBack()
+		}
+		else if(status == 'error kategori'){
+			Mobile.callTestCase(findTestCase('Pages/Edit Product/Verify Error Message - Kategori Produk'), [:], FailureHandling.STOP_ON_FAILURE)
+			Mobile.pressBack()
+		}
+		else if(status == 'error lokasi'){
+			Mobile.callTestCase(findTestCase('Pages/Edit Product/Verify Error Message - Lokasi Produk'), [:], FailureHandling.STOP_ON_FAILURE)
+			Mobile.pressBack()
+		}
+		else if(status == 'error deskripsi'){
+			Mobile.callTestCase(findTestCase('Pages/Edit Product/Verify Error Message - Deskripsi Produk'), [:], FailureHandling.STOP_ON_FAILURE)
+			//Mobile.pressBack()
+		}
+		Mobile.pressBack()
 	}
 }

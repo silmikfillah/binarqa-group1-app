@@ -17,11 +17,8 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-Mobile.tap(findTestObject('Add Product/android.view.View - Remove Kategori'), 0)
+Mobile.verifyElementVisible(findTestObject('Add Product/android.widget.TextView - Text Error Empty Input'), 0)
 
-Mobile.tap(findTestObject('Add Product/android.widget.Spinner - Pilih Kategori'), 0)
-
-Mobile.sendKeys(findTestObject('Add Product/android.widget.Spinner - Pilih Kategori'), kategoriProduk)
-
-Mobile.tap(findTestObject('Add Product/Pilih Kategori Pertama'), 0)
+WebUI.verifyMatch(Mobile.getText(findTestObject('Add Product/android.widget.TextView - Text Error Empty Input'), 0), 'Deskripsi produk tidak boleh kosong', 
+    false)
 
