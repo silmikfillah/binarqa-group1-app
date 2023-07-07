@@ -49,13 +49,13 @@ class editalamat {
 	public void user_login_to_akun() {
 		Mobile.startApplication(System.getProperty("user.dir") + "\\Apk\\app-release-second-hand-gcp.apk", false)
 		WebUI.callTestCase(findTestCase('Pages/Navbar/Tap Akun'), [:], FailureHandling.STOP_ON_FAILURE)
-		
+
 		WebUI.callTestCase(findTestCase('Pages/Edit Profile/Button-masuk'), [:], FailureHandling.STOP_ON_FAILURE)
-		
+
 		WebUI.callTestCase(findTestCase('Pages/Edit Profile/Input_email'), [:], FailureHandling.STOP_ON_FAILURE)
-		
+
 		WebUI.callTestCase(findTestCase('Pages/Edit Profile/Input_password'), [:], FailureHandling.STOP_ON_FAILURE)
-		
+
 		WebUI.callTestCase(findTestCase('Pages/Edit Profile/Button-masuk2'), [:], FailureHandling.STOP_ON_FAILURE)
 	}
 
@@ -67,11 +67,8 @@ class editalamat {
 	@When("User input alamat rumah")
 	public void user_input_alamat_rumah() {
 		WebUI.callTestCase(findTestCase('Pages/Edit Profile/edit alamat'), [:], FailureHandling.STOP_ON_FAILURE)
-		
+
 		WebUI.callTestCase(findTestCase('Pages/Edit Profile/Button simpan'), [:], FailureHandling.STOP_ON_FAILURE)
-		
-		
-		
 	}
 
 	@Then("User verify success massages")
@@ -79,6 +76,5 @@ class editalamat {
 		WebUI.callTestCase(findTestCase('Pages/Edit Profile/edit profile deksa/verify'), [:], FailureHandling.STOP_ON_FAILURE)
 		Mobile.pressBack()
 		WebUI.callTestCase(findTestCase('Pages/Akun/Tap Logout'), [:])
-		
 	}
 }
